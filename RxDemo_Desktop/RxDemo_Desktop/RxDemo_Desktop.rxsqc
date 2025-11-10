@@ -1,0 +1,12 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "RxDemo_Intorduction",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "RxDemo_TestDataBase",
+    "RunConfig": "TestRun"
+  }
+]

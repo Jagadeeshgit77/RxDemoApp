@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="RxDemo_Desktop"
+      id="15a599ac-6799-47b2-ac97-a58c442c801c"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="RxDemo_Desktop"
+      id="15a599ac-6799-47b2-ac97-a58c442c801c"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
