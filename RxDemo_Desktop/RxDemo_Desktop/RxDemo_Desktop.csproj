@@ -126,17 +126,8 @@
     <Compile Include="AssemblyInfo.cs">
       <id>a6f479ea-9822-446b-afd3-5f48683713d9</id>
     </Compile>
-    <Compile Include="CloseRxDemoApplication.cs">
-      <BoundTo>99ce717a-b11b-4c8f-b437-54c119351c5b</BoundTo>
-      <DependentUpon>CloseRxDemoApplication.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>ae562076-7db5-4e99-98b9-82eba76382e1</id>
-    </Compile>
-    <Compile Include="CloseRxDemoApplication.UserCode.cs">
-      <BoundTo>99ce717a-b11b-4c8f-b437-54c119351c5b</BoundTo>
-      <DependentUpon>CloseRxDemoApplication.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b5510e10-b1c8-4177-a21a-6f889b55e06e</id>
+    <Compile Include="CodeModules\UploadTesting.cs">
+      <id>f9973c8c-e46b-4379-b6f7-76f1326ec3f6</id>
     </Compile>
     <Compile Include="ImageBased\ImageBased.cs">
       <BoundTo>3adfb7b6-e816-421a-b7c8-8278fef2ef37</BoundTo>
@@ -170,18 +161,6 @@
       <DependentUpon>RxDemo_DesktopRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>4a1b45d3-b01d-42b9-b505-7bd2f6d72f28</id>
-    </Compile>
-    <Compile Include="StartRxDemoApplication.cs">
-      <BoundTo>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</BoundTo>
-      <DependentUpon>StartRxDemoApplication.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>aebf5f69-4447-4d03-a026-603732ac2d52</id>
-    </Compile>
-    <Compile Include="StartRxDemoApplication.UserCode.cs">
-      <BoundTo>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</BoundTo>
-      <DependentUpon>StartRxDemoApplication.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>52e8a1f9-a756-40e1-8a96-68bf4785ccb8</id>
     </Compile>
     <Compile Include="TestDataBase\Add_TestData.cs">
       <BoundTo>4dab9bbc-a7e5-4f4f-964e-985e58970779</BoundTo>
@@ -243,6 +222,42 @@
       <UserCode>true</UserCode>
       <id>cb0a3847-1b12-4cb1-bcf4-1659da5c328a</id>
     </Compile>
+    <Compile Include="UploadTesting\UploadTesting.cs">
+      <BoundTo>8faa386b-65eb-4e5c-9800-e3d9911eed7d</BoundTo>
+      <DependentUpon>UploadTesting.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2390ed15-eb97-46bb-87f5-ceaff3bfee09</id>
+    </Compile>
+    <Compile Include="UploadTesting\UploadTesting.UserCode.cs">
+      <BoundTo>8faa386b-65eb-4e5c-9800-e3d9911eed7d</BoundTo>
+      <DependentUpon>UploadTesting.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>03627e30-d41b-4fa0-af9f-031a037a3f5c</id>
+    </Compile>
+    <Compile Include="Utils\CloseRxDemoApplication.cs">
+      <DependentUpon>CloseRxDemoApplication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae562076-7db5-4e99-98b9-82eba76382e1</id>
+      <BoundTo>99ce717a-b11b-4c8f-b437-54c119351c5b</BoundTo>
+    </Compile>
+    <Compile Include="Utils\CloseRxDemoApplication.UserCode.cs">
+      <DependentUpon>CloseRxDemoApplication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b5510e10-b1c8-4177-a21a-6f889b55e06e</id>
+      <BoundTo>99ce717a-b11b-4c8f-b437-54c119351c5b</BoundTo>
+    </Compile>
+    <Compile Include="Utils\StartRxDemoApplication.cs">
+      <DependentUpon>StartRxDemoApplication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aebf5f69-4447-4d03-a026-603732ac2d52</id>
+      <BoundTo>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</BoundTo>
+    </Compile>
+    <Compile Include="Utils\StartRxDemoApplication.UserCode.cs">
+      <DependentUpon>StartRxDemoApplication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52e8a1f9-a756-40e1-8a96-68bf4785ccb8</id>
+      <BoundTo>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="RxDemo_ImageBased.rxtst">
@@ -263,11 +278,6 @@
     </Content>
     <None Include="app.config">
       <id>2ec40bf6-bd4f-4271-9049-efedd55369d3</id>
-    </None>
-    <None Include="CloseRxDemoApplication.rxrec">
-      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
-      <id>99ce717a-b11b-4c8f-b437-54c119351c5b</id>
-      <recordtableid>3695d157-eb85-48a0-81a4-613d493f6448</recordtableid>
     </None>
     <None Include="ImageBased\ImageBased.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
@@ -294,11 +304,6 @@
       <repoid>25f8829c-7b6a-4633-bfe7-b9a5a3753635</repoid>
       <reporootid>975052f4-37d6-4461-8cec-6471990eb218</reporootid>
     </None>
-    <None Include="StartRxDemoApplication.rxrec">
-      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
-      <id>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</id>
-      <recordtableid>42197120-eed0-4ea7-8d4b-2694ca0d65c2</recordtableid>
-    </None>
     <None Include="TestDataBase\Add_TestData.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>4dab9bbc-a7e5-4f4f-964e-985e58970779</id>
@@ -324,6 +329,21 @@
       <id>f6816aba-76bc-4e01-9657-4f7a1a71f2b8</id>
       <recordtableid>36e7479f-98aa-4a73-94a5-c57a74aaf8e1</recordtableid>
     </None>
+    <None Include="UploadTesting\UploadTesting.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>8faa386b-65eb-4e5c-9800-e3d9911eed7d</id>
+      <recordtableid>a2df38ee-ad91-42b3-8361-305d6954cb42</recordtableid>
+    </None>
+    <None Include="Utils\CloseRxDemoApplication.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>99ce717a-b11b-4c8f-b437-54c119351c5b</id>
+      <recordtableid>3695d157-eb85-48a0-81a4-613d493f6448</recordtableid>
+    </None>
+    <None Include="Utils\StartRxDemoApplication.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</id>
+      <recordtableid>42197120-eed0-4ea7-8d4b-2694ca0d65c2</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="RxDemo_Desktop.rxtmg">
@@ -341,6 +361,15 @@
     </Folder>
     <Folder Include="ImageBased">
       <id>eb917545-ecf0-4b71-af40-08c54052f248</id>
+    </Folder>
+    <Folder Include="CodeModules">
+      <id>afdd1d4b-9c81-48a4-ab8e-8185e724a832</id>
+    </Folder>
+    <Folder Include="UploadTesting">
+      <id>3850e74e-d066-4b56-894b-a549b50c23ba</id>
+    </Folder>
+    <Folder Include="Utils">
+      <id>06816b2d-3a1c-4a1b-94e5-18d9259f55b0</id>
     </Folder>
     <Folder Include="UI-Element Test Area">
       <id>9fa60d08-b00f-4506-b54b-7779883b594a</id>

@@ -5237,6 +5237,52 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']
 				</basepath>
 			</folder>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="d72cf329-6f50-4784-8fbf-0ed56862ddf5"
+			isrooted="True"
+			name="RxTabUpload"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabUpload']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="ef0e4291-e1ae-4433-ac58-af4448cbe237"
+				name="ResetUpload"
+				refimgid="818dfcfc-7a21-4b57-a845-fc3f5dc414ec"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/button[@controlname='btnResetUpload']/element[@accessiblename='Reset upload']"
+				robustPath="/form[@controlname='RxMainFrame']//element[@accessiblename='Reset upload']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/?/?/element[@accessiblename='Reset upload']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="739af7a0-64f5-4f41-824f-7966d2217f2b"
+				name="BtnStartUpload"
+				refimgid="2e69109d-1a3e-42eb-8efa-e6af2dcc1574"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/button[@controlname='btnStartUpload']"
+				robustPath="/form[@controlname='RxMainFrame']//button[@controlname='btnStartUpload']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/button[@controlname='btnStartUpload']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="829184f6-b2a8-4bcc-8c94-187fee8f2806"
+				name="LblFinished"
+				refimgid="6eb346f6-a910-4a0d-9441-fee043f3a172"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/text[@controlname='lblFinished']"
+				robustPath="/form[@controlname='RxMainFrame']//text[@controlname='lblFinished']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/text[@controlname='lblFinished']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='RxMainFrame']
 			</basepath>

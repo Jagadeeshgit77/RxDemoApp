@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RxDemo_Desktop
+namespace RxDemo_Desktop.Utils
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace RxDemo_Desktop
     public partial class StartRxDemoApplication : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RxDemo_DesktopRepository repository.
+        /// Holds an instance of the global::RxDemo_Desktop.RxDemo_DesktopRepository repository.
         /// </summary>
-        public static RxDemo_DesktopRepository repo = RxDemo_DesktopRepository.Instance;
+        public static global::RxDemo_Desktop.RxDemo_DesktopRepository repo = global::RxDemo_Desktop.RxDemo_DesktopRepository.Instance;
 
         static StartRxDemoApplication instance = new StartRxDemoApplication();
 

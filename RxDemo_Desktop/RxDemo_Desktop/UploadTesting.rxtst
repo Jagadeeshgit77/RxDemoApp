@@ -40,9 +40,77 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testcase
+			id="3196b36b-16f6-4728-ae44-93846631c992"
+			name="TC02">
+			</testcase>
+			<testmodule
+			enabled="False"
+			id="34f268a3-6ecc-4687-bbde-e749d063f3f1"
+			name="CloseRxDemoApplication"
+			ref="3695d157-eb85-48a0-81a4-613d493f6448"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
+					variableid="0004bda3-717e-4cbb-a78f-6c7e9eee4285"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="3c39d5e2-6914-4786-9d4a-a7b27e623829"
+			name="TC03_CloseApplication">
+			</testcase>
+			<testcase
+			id="61c8bfbf-9269-4463-b245-24a44ff4288b"
+			name="TC01_OpenApplication">
+				<parameters>
+					<param
+					mask="False"
+					name="Tab"
+					value="Upload testing">
+					</param>
+					<param
+					mask="False"
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testmodule
+			id="ae10b68b-5a5f-4322-9eed-83739276cc2d"
+			name="StartRxDemoApplication"
+			ref="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
+					variableid="6723f1ca-6174-4772-b08b-0dd6c8d83526"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="c718c048-c249-4bc3-92c3-8209a324d5a6"
+			name="setup">
+			</setup>
+			<teardown
+			id="d0c8e816-be70-4826-a48f-e62990197de0"
+			name="teardown">
+			</teardown>
+			<testcase
 			id="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
 			name="UploadTesting"
 			reportlevel="Info;20">
+				<parameters>
+					<param
+					mask="False"
+					name="AppProcessID"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -52,6 +120,34 @@
 				<testcase
 				id="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
 				name="UploadTesting">
+					<testcase
+					id="61c8bfbf-9269-4463-b245-24a44ff4288b"
+					name="TC01_OpenApplication">
+						<setup
+						id="c718c048-c249-4bc3-92c3-8209a324d5a6"
+						name="setup">
+							<testmodule
+							id="ae10b68b-5a5f-4322-9eed-83739276cc2d"
+							name="StartRxDemoApplication">
+							</testmodule>
+						</setup>
+					</testcase>
+					<testcase
+					id="3196b36b-16f6-4728-ae44-93846631c992"
+					name="TC02">
+					</testcase>
+					<testcase
+					id="3c39d5e2-6914-4786-9d4a-a7b27e623829"
+					name="TC03_CloseApplication">
+						<teardown
+						id="d0c8e816-be70-4826-a48f-e62990197de0"
+						name="teardown">
+							<testmodule
+							id="34f268a3-6ecc-4687-bbde-e749d063f3f1"
+							name="CloseRxDemoApplication">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -62,6 +158,15 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="3196b36b-16f6-4728-ae44-93846631c992">
+			</testcontainer>
+			<testcontainer
+			id="3c39d5e2-6914-4786-9d4a-a7b27e623829">
+			</testcontainer>
+			<testcontainer
+			id="61c8bfbf-9269-4463-b245-24a44ff4288b">
+			</testcontainer>
 			<testcontainer
 			id="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7">
 			</testcontainer>

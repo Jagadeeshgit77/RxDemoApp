@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
+id="3695d157-eb85-48a0-81a4-613d493f6448"
 mode="Desktop">
 	<repeatcount>
 		1
@@ -19,39 +19,37 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="StartRxDemoApplication"
-	namespace="RxDemo_Desktop">
+	classname="CloseRxDemoApplication"
+	namespace="RxDemo_Desktop.Utils">
 	</codegen>
 	<variables>
 		<var
-		id="6723f1ca-6174-4772-b08b-0dd6c8d83526"
-		name="StartAutProcessIDVar">
+		id="0004bda3-717e-4cbb-a78f-6c7e9eee4285"
+		name="CloseAutProcessIDVar">
+			-1
 		</var>
 	</variables>
 	<recorditems>
-		<runapprecorditem
+		<closeapprecorditem
 		enabled="True"
-		maximized="False"
-		optional="False">
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="787bf7ad-9b12-41b7-9373-72f0c0577114">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="ReturnVariable"
-				variable="StartAutProcessIDVar">
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
 				</binding>
 			</bindings>
-			<filename>
-				C:\Users\Planit\Downloads\RxDemoApp\RxDemoApp.exe
-			</filename>
-			<args>
-			</args>
-		</runapprecorditem>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="25f8829c-7b6a-4633-bfe7-b9a5a3753635"
 	name="RxDemo_DesktopRepository"
-	relativepath="RxDemo_DesktopRepository.rxrep">
+	relativepath="..\RxDemo_DesktopRepository.rxrep">
 		<codegen
 		classname="RxDemo_DesktopRepository"
 		namespace="RxDemo_Desktop">
@@ -63,7 +61,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		StartRxDemoApplication.UserCode.cs
+		CloseRxDemoApplication.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
