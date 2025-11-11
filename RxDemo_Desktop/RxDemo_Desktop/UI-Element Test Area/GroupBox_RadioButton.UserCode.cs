@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RxDemo_Desktop.TestDataBase
+namespace RxDemo_Desktop.UI_Element_Test_Area
 {
-    public partial class TestDataBase
+    public partial class GroupBox_RadioButton
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

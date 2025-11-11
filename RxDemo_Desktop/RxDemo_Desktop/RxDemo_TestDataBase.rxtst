@@ -3,13 +3,14 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testcase
+			datasource="TestDataBase"
 			id="0f3a4ce2-d169-4904-bc73-68645f2d69fe"
 			name="TC02_PositiveScenario">
 				<parameters>
 					<param
 					mask="False"
 					name="Tab"
-					value="Introduction">
+					value="Test database">
 					</param>
 					<param
 					mask="False"
@@ -74,9 +75,53 @@
 			</testcase>
 			<testmodule
 			id="c1345443-a8cb-4391-ba7c-8ac91f83ffab"
-			name="TestDataBase"
+			name="Add_TestData"
 			ref="dfac102d-79a9-4aa0-ba82-2d24f56f190a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Tab"
+					datasourceid="0f3a4ce2-d169-4904-bc73-68645f2d69fe"
+					variableid="43a54ce5-75bb-4d2e-88b3-ac36f004a6a3"
+					variablename="Tab">
+					</var>
+					<var
+					dataname="txtFirstName"
+					datasourceid="329439fd-0a4e-440e-9eed-e5d42848ceb2"
+					variableid="3c4e6ea2-d97f-420a-91ab-e61ddaa3ff4c"
+					variablename="FirstName">
+					</var>
+					<var
+					dataname="txtLastName"
+					datasourceid="329439fd-0a4e-440e-9eed-e5d42848ceb2"
+					variableid="35d695b5-dc64-47bd-9c5d-52b083b55e8d"
+					variablename="LastName">
+					</var>
+					<var
+					dataname="intAge"
+					datasourceid="329439fd-0a4e-440e-9eed-e5d42848ceb2"
+					variableid="b475d073-69df-44a9-97cd-99d2138e12d3"
+					variablename="Age">
+					</var>
+					<var
+					dataname="selGender"
+					datasourceid="329439fd-0a4e-440e-9eed-e5d42848ceb2"
+					variableid="047539aa-cac6-4d5f-8dd5-fcf16af36a56"
+					variablename="Gender">
+					</var>
+					<var
+					dataname="lstDepartment"
+					datasourceid="329439fd-0a4e-440e-9eed-e5d42848ceb2"
+					variableid="a35428b2-b5d9-411d-b81b-46fbe2906657"
+					variablename="drpdwn">
+					</var>
+					<var
+					dataname="intDBEntries"
+					datasourceid="329439fd-0a4e-440e-9eed-e5d42848ceb2"
+					variableid="029e98c5-d87d-41e3-9a8b-08d91130d55a"
+					variablename="Count">
+					</var>
+				</databinding>
 			</testmodule>
 			<testsuite
 			ExportColumnList="None"
@@ -116,10 +161,19 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			enabled="False"
 			id="e6669843-67d4-464e-8f93-90be14bc5452"
-			name="TestDataBase"
+			name="Add_TestData"
 			ref="dfac102d-79a9-4aa0-ba82-2d24f56f190a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Tab"
+					datasourceid="c00bc56f-fb6d-4040-9ee8-091fc76ab9c0"
+					variableid="43a54ce5-75bb-4d2e-88b3-ac36f004a6a3"
+					variablename="Tab">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="f15d517f-3f66-493d-8f72-bbef8011d238"
@@ -138,6 +192,7 @@
 				</parameters>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="feee4ac3-6963-444f-9aff-4ad69fff2789"
 			name="CloseRxDemoApplication"
 			ref="3695d157-eb85-48a0-81a4-613d493f6448"
@@ -176,7 +231,7 @@
 					name="TC02_PositiveScenario">
 						<testmodule
 						id="c1345443-a8cb-4391-ba7c-8ac91f83ffab"
-						name="TestDataBase">
+						name="Add_TestData">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -184,7 +239,7 @@
 					name="TC03_NegativeScenario">
 						<testmodule
 						id="e6669843-67d4-464e-8f93-90be14bc5452"
-						name="TestDataBase">
+						name="Add_TestData">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -204,6 +259,70 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="C:\Users\Planit\Downloads\RxTestDatabase.xlsx"
+		id="fe9b6b24-1263-4c9c-a20c-e1c07c310ce3"
+		includefile="Unchecked"
+		lastknownrowcount="8"
+		name="TestData"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Sheet1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					txtFirstName
+				</column>
+				<column>
+					txtLastName
+				</column>
+				<column>
+					intAge
+				</column>
+				<column>
+					selGender
+				</column>
+				<column>
+					lstDepartment
+				</column>
+				<column>
+					intDBEntries
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="C:\Users\Planit\Downloads\RxTestDatabase.xlsx"
+		id="329439fd-0a4e-440e-9eed-e5d42848ceb2"
+		includefile="Unchecked"
+		lastknownrowcount="8"
+		name="TestDataBase"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Sheet1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					txtFirstName
+				</column>
+				<column>
+					txtLastName
+				</column>
+				<column>
+					intAge
+				</column>
+				<column>
+					selGender
+				</column>
+				<column>
+					lstDepartment
+				</column>
+				<column>
+					intDBEntries
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">

@@ -8,5 +8,20 @@
     "Enabled": "True",
     "TestSuite": "RxDemo_TestDataBase",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "RxDemo_ImageBased",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "RxDemo_UIElementTestArea",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "UploadTesting",
+    "RunConfig": "TestRun"
   }
 ]

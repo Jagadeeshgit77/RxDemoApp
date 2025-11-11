@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b8db6921-d9c3-49ea-8035-cb7cf1be1f18"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="GroupBox_List"
+	namespace="RxDemo_Desktop.UI_Element_Test_Area">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1936e868-bd72-44d6-9f21-7204fd6b4565"
+		sx="846"
+		sy="439"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8b5d3ff8-9c4a-447f-b705-4c17d46917ce"
+			sourcename="Recorder">
+				<element
+				capabilities=""
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="4"
+				prefcap="button"
+				rect="837,430,17,17"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Down
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/container[@controlname='grpBox']/?/?/list[@controlname='lstTestBox']/?/?/button[@text='Down']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="f28a5070-ffd2-4030-89f8-4c7d5587640a">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABFAGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCtRWj/
+AGLc/wB+L8z/AIUf2Lc/34vzP+Fd/tIdzg9nPsZ1FaP9i3P9+L8z/hR/Ytz/AH4vzP8AhR7SHcPZ
+z7GdW1o3/Hm3/XQ/yFVv7Fuf78X5n/Cr9havaW5jkKklifl+grKrOLjZM1pQkpXaES+he48oE4PC
+v2Y9wP0qw3+si/3/AP2U00QRCNIwg2oQVHoRTm/1kX+//wCymuU6iakPVfr/AEpaQ9V+v9KAFooo
+oAKKKKACiiigAooooAKrvd23H+kQ/wDfYqxWBptpBPal5U3NvIzkjjAqW3eyNqcIuLlLoav2u2/5
++Iv++xTWurffF/pEXD8/OP7pqv8A2daf88v/AB4/41V1Ozggs1eKPaxkAzknjBpNySuXCFKclFN/
+gb1Ieq/X+lLSHqv1/pVnMLRRRQAUUUUAFFR7p/8AnnH/AN9n/CjdP/zzj/77P+FAElFR7p/+ecf/
+AH2f8KN0/wDzzj/77P8AhQBJWPo//Hif+uh/kK1N0/8Azzj/AO+z/hWLZS3NrAYzYzPli2cEdh7e
+1RJ2aOilFypyS8v1IGtr2C4itwzz2sP75VU/OyqR8vvjIOO/5Yt6nKk2lxyRMGRpAQR9DU1nPJNq
+aeZbPBiF8b+/zJ7CquuwxwhpIZ40LHzJIC4G48jco9ev1+tN+9HQVP8Ad1VzdDepD1X6/wBKWkPV
+fr/SqMBaKKKACiiigAopPm9R+VHzeo/KgBaKT5vUflR83qPyoAWik+b1H5UfN6j8qAK15aSXEiNH
+cGHCsjFVyxBKk4PY/L1561UtrOa3v4wkbeVGzIJMrgxEZCnJ3ZDYA9q1Pm9R+VHzeo/KgBaQ9V+v
+9KPm9R+VGDkZI49qAFooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="9;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d1b819ac-9028-469a-b1a9-14f35a1c2693"
+		sx="846"
+		sy="439"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8b5d3ff8-9c4a-447f-b705-4c17d46917ce"
+			sourcename="Recorder">
+				<element
+				capabilities=""
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="4"
+				prefcap="button"
+				rect="837,430,17,17"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Down
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/container[@controlname='grpBox']/?/?/list[@controlname='lstTestBox']/?/?/button[@text='Down']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="029ce78d-24ae-45cb-8974-6582f0ef362e">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABFAGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigApr9qdTX7UAU0voXuPKBODwr9mPcD9KsN/rIv9/wD9lNNEEQjSMINqEFR6EU5v9ZF/v/8A
+spoAmpD1X6/0paQ9V+v9KAFooooAKKKKACiiigAooooAKrvd23H+kQ/99irFYGm2kE9qXlTc28jO
+SOMCpbd7I2pwi4uUuhq/a7b/AJ+Iv++xTWurffF/pEXD8/OP7pqv/Z1p/wA8v/Hj/jVXU7OCCzV4
+o9rGQDOSeMGk3JK5cIUpyUU3+BvUh6r9f6UtIeq/X+lWcwtFFFABRRRQAUVHun/55x/99n/CjdP/
+AM84/wDvs/4UASUVHun/AOecf/fZ/wAKN0//ADzj/wC+z/hQBJWPo/8Ax4n/AK6H+QrU3T/884/+
++z/hWLZS3NrAYzYzPli2cEdh7e1RJ2aOilFypyS8v1IGtr2C4itwzz2sP75VU/OyqR8vvjIOO/5Y
+t6nKk2lxyRMGRpAQR9DU1nPJNqaeZbPBiF8b+/zJ7CquuwxwhpIZ40LHzJIC4G48jco9ev1+tN+9
+HQVP93VXN0N6kPVfr/SlpD1X6/0qjAWiiigAooooAKKT5vUflR83qPyoAWik+b1H5UfN6j8qAFop
+Pm9R+VHzeo/KgCteWklxIjR3BhwrIxVcsQSpOD2Py9eetVLazmt7+MJG3lRsyCTK4MRGQpyd2Q2A
+PatT5vUflR83qPyoAWkPVfr/AEo+b1H5UYORkjj2oAWiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKAP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="9;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fa811248-3d6d-4ca9-a761-842c8ef17934"
+		sx="846"
+		sy="439"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8b5d3ff8-9c4a-447f-b705-4c17d46917ce"
+			sourcename="Recorder">
+				<element
+				capabilities=""
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="4"
+				prefcap="button"
+				rect="837,430,17,17"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Down
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/container[@controlname='grpBox']/?/?/list[@controlname='lstTestBox']/?/?/button[@text='Down']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="4052bbd9-c9cb-4068-90cb-d2c58030f067">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABFAGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigApr9qdTX7UAU0voXuPKBODwr9mPcD9KsN/rIv9/wD9lNNEEQjSMINqEFR6EU5v9ZF/v/8A
+spoAmpD1X6/0paQ9V+v9KAFooooAKKKKACiiigAooooAKrvd23H+kQ/99irFYGm2kE9qXlTc28jO
+SOMCpbd7I2pwi4uUuhq/a7b/AJ+Iv++xTWurffF/pEXD8/OP7pqv/Z1p/wA8v/Hj/jVXU7OCCzV4
+o9rGQDOSeMGk3JK5cIUpyUU3+BvUh6r9f6UtIeq/X+lWcwtFFFABRRRQAUVHun/55x/99n/CjdP/
+AM84/wDvs/4UASUVHun/AOecf/fZ/wAKN0//ADzj/wC+z/hQBJWPo/8Ax4n/AK6H+QrU3T/884/+
++z/hWLZS3NrAYzYzPli2cEdh7e1RJ2aOilFypyS8v1IGtr2C4itwzz2sP75VU/OyqR8vvjIOO/5Y
+t6nKk2lxyRMGRpAQR9DU1nPJNqaeZbPBiF8b+/zJ7CquuwxwhpIZ40LHzJIC4G48jco9ev1+tN+9
+HQVP93VXN0N6kPVfr/SlpD1X6/0qjAWiiigAooooAKKT5vUflR83qPyoAWik+b1H5UfN6j8qAFop
+Pm9R+VHzeo/KgCteWklxIjR3BhwrIxVcsQSpOD2Py9eetVLazmt7+MJG3lRsyCTK4MRGQpyd2Q2A
+PatT5vUflR83qPyoAWkPVfr/AEo+b1H5UYORkjj2oAWiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKAP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="9;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="86940a66-9b02-4d2a-801c-1fa14a058a96"
+		sx="846"
+		sy="439"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8b5d3ff8-9c4a-447f-b705-4c17d46917ce"
+			sourcename="Recorder">
+				<element
+				capabilities=""
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="4"
+				prefcap="button"
+				rect="837,430,17,17"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Down
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/container[@controlname='grpBox']/?/?/list[@controlname='lstTestBox']/?/?/button[@text='Down']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="29b2dbc5-8251-4390-aa4e-bfa0881b61da">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABFAGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigApr9qdTX7UAU0voXuPKBODwr9mPcD9KsN/rIv9/wD9lNNEEQjSMINqEFR6EU5v9ZF/v/8A
+spoAmpD1X6/0paQ9V+v9KAFooooAKKKKACiiigAooooAKrvd23H+kQ/99irFYGm2kE9qXlTc28jO
+SOMCpbd7I2pwi4uUuhq/a7b/AJ+Iv++xTWurffF/pEXD8/OP7pqv/Z1p/wA8v/Hj/jVXU7OCCzV4
+o9rGQDOSeMGk3JK5cIUpyUU3+BvUh6r9f6UtIeq/X+lWcwtFFFABRRRQAUVHun/55x/99n/CjdP/
+AM84/wDvs/4UASUVHun/AOecf/fZ/wAKN0//ADzj/wC+z/hQBJWPo/8Ax4n/AK6H+QrU3T/884/+
++z/hWLZS3NrAYzYzPli2cEdh7e1RJ2aOilFypyS8v1IGtr2C4itwzz2sP75VU/OyqR8vvjIOO/5Y
+t6nKk2lxyRMGRpAQR9DU1nPJNqaeZbPBiF8b+/zJ7CquuwxwhpIZ40LHzJIC4G48jco9ev1+tN+9
+HQVP93VXN0N6kPVfr/SlpD1X6/0qjAWiiigAooooAKKT5vUflR83qPyoAWik+b1H5UfN6j8qAFop
+Pm9R+VHzeo/KgCteWklxIjR3BhwrIxVcsQSpOD2Py9eetVLazmt7+MJG3lRsyCTK4MRGQpyd2Q2A
+PatT5vUflR83qPyoAWkPVfr/AEo+b1H5UYORkjj2oAWiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKAP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="33423ef6-bd9d-4588-a0e0-229f982ae17d"
+		sx="754"
+		sy="443"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8252159a-0dac-4210-8c49-ff7eb4b582b9"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="6"
+				prefcap="listitem"
+				rect="614,432,223,15"
+				role="listitem"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="index"
+					type="System.Int32">
+						6
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Hands-on application topics
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Double Click
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Hands-on application topics
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						ListItem
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']//list[@controlname='lstTestBox']/list[@accessiblename='Image-based automation']/listitem[@accessiblename&gt;'Hands-on application topi']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="ed759937-cf68-425b-b832-55b0fa15efe2">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="25f8829c-7b6a-4633-bfe7-b9a5a3753635"
+	name="RxDemo_DesktopRepository"
+	relativepath="..\RxDemo_DesktopRepository.rxrep">
+		<codegen
+		classname="RxDemo_DesktopRepository"
+		namespace="RxDemo_Desktop">
+		</codegen>
+		<rootfolder
+		id="975052f4-37d6-4461-8cec-6471990eb218"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		GroupBox_List.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

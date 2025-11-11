@@ -138,6 +138,18 @@
       <UserCode>true</UserCode>
       <id>b5510e10-b1c8-4177-a21a-6f889b55e06e</id>
     </Compile>
+    <Compile Include="ImageBased\ImageBased.cs">
+      <BoundTo>3adfb7b6-e816-421a-b7c8-8278fef2ef37</BoundTo>
+      <DependentUpon>ImageBased.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cb711efd-eb12-4e99-b7f0-bf0fb2c9f042</id>
+    </Compile>
+    <Compile Include="ImageBased\ImageBased.UserCode.cs">
+      <BoundTo>3adfb7b6-e816-421a-b7c8-8278fef2ef37</BoundTo>
+      <DependentUpon>ImageBased.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>509ba027-0570-48ce-84e0-979d3c5e153d</id>
+    </Compile>
     <Compile Include="Introduction\Introduction.cs">
       <DependentUpon>Introduction.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -171,23 +183,83 @@
       <UserCode>true</UserCode>
       <id>52e8a1f9-a756-40e1-8a96-68bf4785ccb8</id>
     </Compile>
-    <Compile Include="TestDataBase\TestDataBase.cs">
+    <Compile Include="TestDataBase\Add_TestData.cs">
       <BoundTo>4dab9bbc-a7e5-4f4f-964e-985e58970779</BoundTo>
-      <DependentUpon>TestDataBase.rxrec</DependentUpon>
+      <DependentUpon>Add_TestData.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>960d88c5-e115-420c-b9a2-ba88e11d9f66</id>
     </Compile>
-    <Compile Include="TestDataBase\TestDataBase.UserCode.cs">
+    <Compile Include="TestDataBase\Add_TestData.UserCode.cs">
       <BoundTo>4dab9bbc-a7e5-4f4f-964e-985e58970779</BoundTo>
-      <DependentUpon>TestDataBase.rxrec</DependentUpon>
+      <DependentUpon>Add_TestData.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>625699cf-7eca-488a-a863-d0a747caf419</id>
     </Compile>
+    <Compile Include="TestDataBase\Del_TestData.cs">
+      <BoundTo>470aac30-38c9-4a0b-90a9-573f4d50b0db</BoundTo>
+      <DependentUpon>Del_TestData.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>623cfcf1-580a-44af-b955-70bebeaccc94</id>
+    </Compile>
+    <Compile Include="TestDataBase\Del_TestData.UserCode.cs">
+      <BoundTo>470aac30-38c9-4a0b-90a9-573f4d50b0db</BoundTo>
+      <DependentUpon>Del_TestData.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1b4cfa6b-608e-4247-974c-37512398b53b</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_List.cs">
+      <BoundTo>4f98aa20-8414-45e4-b782-90b8746780d9</BoundTo>
+      <DependentUpon>GroupBox_List.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eca5e727-3c6c-4dc0-b13c-cad177ae00c9</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_List.UserCode.cs">
+      <BoundTo>4f98aa20-8414-45e4-b782-90b8746780d9</BoundTo>
+      <DependentUpon>GroupBox_List.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c62d8d2-52ec-46bc-97f2-2f75cc8ad823</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_RadioButton.cs">
+      <BoundTo>c1a171a0-61cc-4dc4-abc2-8feb3dbbca83</BoundTo>
+      <DependentUpon>GroupBox_RadioButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f9eaad08-c9f7-48f1-a5ba-1de159476c87</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_RadioButton.UserCode.cs">
+      <BoundTo>c1a171a0-61cc-4dc4-abc2-8feb3dbbca83</BoundTo>
+      <DependentUpon>GroupBox_RadioButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>babf716a-fad5-4282-946f-0a493f2d20f1</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_TreeView.cs">
+      <BoundTo>f6816aba-76bc-4e01-9657-4f7a1a71f2b8</BoundTo>
+      <DependentUpon>GroupBox_TreeView.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e92d389-ba00-4285-9869-d60e127de2d6</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_TreeView.UserCode.cs">
+      <BoundTo>f6816aba-76bc-4e01-9657-4f7a1a71f2b8</BoundTo>
+      <DependentUpon>GroupBox_TreeView.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cb0a3847-1b12-4cb1-bcf4-1659da5c328a</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RxDemo_ImageBased.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>356e4b6f-c217-4bd9-9ea3-6b3b0e6a9f1a</id>
+    </Content>
     <Content Include="RxDemo_TestDataBase.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>3c1c0597-6772-459a-8e59-f8c6d743fb67</id>
+    </Content>
+    <Content Include="RxDemo_UIElementTestArea.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>48bf1d48-d323-4775-85df-7cc430ebe47b</id>
+    </Content>
+    <Content Include="UploadTesting.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1a7cd954-d7b7-44c7-9375-8231514fb03a</id>
     </Content>
     <None Include="app.config">
       <id>2ec40bf6-bd4f-4271-9049-efedd55369d3</id>
@@ -196,6 +268,11 @@
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>99ce717a-b11b-4c8f-b437-54c119351c5b</id>
       <recordtableid>3695d157-eb85-48a0-81a4-613d493f6448</recordtableid>
+    </None>
+    <None Include="ImageBased\ImageBased.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>3adfb7b6-e816-421a-b7c8-8278fef2ef37</id>
+      <recordtableid>48b2023e-6039-451c-a2a1-aede9de456a2</recordtableid>
     </None>
     <None Include="Introduction\Introduction.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
@@ -222,10 +299,30 @@
       <id>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</id>
       <recordtableid>42197120-eed0-4ea7-8d4b-2694ca0d65c2</recordtableid>
     </None>
-    <None Include="TestDataBase\TestDataBase.rxrec">
+    <None Include="TestDataBase\Add_TestData.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>4dab9bbc-a7e5-4f4f-964e-985e58970779</id>
       <recordtableid>dfac102d-79a9-4aa0-ba82-2d24f56f190a</recordtableid>
+    </None>
+    <None Include="TestDataBase\Del_TestData.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>470aac30-38c9-4a0b-90a9-573f4d50b0db</id>
+      <recordtableid>fd14f05d-a6d6-4c4b-a72f-b31b2aef8b62</recordtableid>
+    </None>
+    <None Include="UI-Element Test Area\GroupBox_List.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>4f98aa20-8414-45e4-b782-90b8746780d9</id>
+      <recordtableid>b8db6921-d9c3-49ea-8035-cb7cf1be1f18</recordtableid>
+    </None>
+    <None Include="UI-Element Test Area\GroupBox_RadioButton.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>c1a171a0-61cc-4dc4-abc2-8feb3dbbca83</id>
+      <recordtableid>8f825dfa-6567-4f46-98a2-a00e35a53bdf</recordtableid>
+    </None>
+    <None Include="UI-Element Test Area\GroupBox_TreeView.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>f6816aba-76bc-4e01-9657-4f7a1a71f2b8</id>
+      <recordtableid>36e7479f-98aa-4a73-94a5-c57a74aaf8e1</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +338,12 @@
   <ItemGroup>
     <Folder Include="Introduction">
       <id>8e975b89-c26d-484b-bc42-75ab672abb63</id>
+    </Folder>
+    <Folder Include="ImageBased">
+      <id>eb917545-ecf0-4b71-af40-08c54052f248</id>
+    </Folder>
+    <Folder Include="UI-Element Test Area">
+      <id>9fa60d08-b00f-4506-b54b-7779883b594a</id>
     </Folder>
     <Folder Include="TestDataBase">
       <id>9324da91-d2b1-40c9-af4e-5265cbe5f51f</id>
