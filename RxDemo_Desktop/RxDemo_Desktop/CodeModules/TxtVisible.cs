@@ -46,5 +46,24 @@ namespace RxDemo_Desktop.CodeModules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
         }
+        
+//        bool visible = false;
+//        int timeout = 30000;
+//        int pollingInterval = 500;
+//        int elapsedTime = 0;
+        public void txtVisible(){
+        	RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
+        	while(!rx.RxMainFrame.RxTabUpload.Txt_Finished.Visible){
+        		Thread.Sleep(10000);
+        	}
+        	Validate.AttributeEqual(rx.RxMainFrame.RxTabUpload.Txt_FinishedInfo, "Text", "Upload finished");
+        	
+        	rx.RxMainFrame.RxTabUpload.Btn_Reset.Click();
+        	
+        }
+
+       
+        
+        
     }
 }

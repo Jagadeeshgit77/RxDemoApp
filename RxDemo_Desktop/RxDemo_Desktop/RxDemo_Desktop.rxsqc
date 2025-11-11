@@ -21,7 +21,7 @@
   },
   {
     "Enabled": "True",
-    "TestSuite": "UploadTesting",
+    "TestSuite": "RxDemo_UploadTesting",
     "RunConfig": "TestRun"
   }
 ]

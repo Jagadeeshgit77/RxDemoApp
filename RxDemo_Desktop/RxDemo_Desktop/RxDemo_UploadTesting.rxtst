@@ -26,7 +26,7 @@
 			junitreport="False"
 			junitreportaddtestid="False"
 			junitreportshowerrafterstd="True"
-			name="UploadTesting"
+			name="RxDemo_UploadTesting"
 			overwritefilechecked="False"
 			reportcompress="False"
 			reportdescription=""
@@ -39,10 +39,6 @@
 			showtestmodulefullpath="False"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
-			<testcase
-			id="3196b36b-16f6-4728-ae44-93846631c992"
-			name="TC02">
-			</testcase>
 			<testmodule
 			enabled="False"
 			id="34f268a3-6ecc-4687-bbde-e749d063f3f1"
@@ -96,13 +92,25 @@
 			id="c718c048-c249-4bc3-92c3-8209a324d5a6"
 			name="setup">
 			</setup>
+			<testmodule
+			id="cedb04d1-f20d-4cea-b282-70da7ece72b5"
+			name="UploadTesting"
+			ref="a2df38ee-ad91-42b3-8361-305d6954cb42"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="d0c8e816-be70-4826-a48f-e62990197de0"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="d8c07208-71d6-4d1d-9662-571f2b762b33"
+			name="UploadTesting"
+			ref="ebf5c768-8929-4524-ba58-a9a22bb183a2"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
-			name="UploadTesting"
+			name="RxDemo_UploadTesting"
 			reportlevel="Info;20">
 				<parameters>
 					<param
@@ -112,14 +120,18 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="e888d0f8-eec2-480a-aa20-9225a86aabc8"
+			name="TC02">
+			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
 			id="00198d2e-debc-42e3-943c-a8b58a016aca"
-			name="UploadTesting">
+			name="RxDemo_UploadTesting">
 				<testcase
 				id="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
-				name="UploadTesting">
+				name="RxDemo_UploadTesting">
 					<testcase
 					id="61c8bfbf-9269-4463-b245-24a44ff4288b"
 					name="TC01_OpenApplication">
@@ -133,8 +145,16 @@
 						</setup>
 					</testcase>
 					<testcase
-					id="3196b36b-16f6-4728-ae44-93846631c992"
+					id="e888d0f8-eec2-480a-aa20-9225a86aabc8"
 					name="TC02">
+						<testmodule
+						id="cedb04d1-f20d-4cea-b282-70da7ece72b5"
+						name="UploadTesting">
+						</testmodule>
+						<testmodule
+						id="d8c07208-71d6-4d1d-9662-571f2b762b33"
+						name="UploadTesting">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="3c39d5e2-6914-4786-9d4a-a7b27e623829"
@@ -159,9 +179,6 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="3196b36b-16f6-4728-ae44-93846631c992">
-			</testcontainer>
-			<testcontainer
 			id="3c39d5e2-6914-4786-9d4a-a7b27e623829">
 			</testcontainer>
 			<testcontainer
@@ -169,6 +186,9 @@
 			</testcontainer>
 			<testcontainer
 			id="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7">
+			</testcontainer>
+			<testcontainer
+			id="e888d0f8-eec2-480a-aa20-9225a86aabc8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

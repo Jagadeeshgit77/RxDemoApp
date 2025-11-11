@@ -5250,7 +5250,7 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 				addcaps="unknown,accessible"
 				capname="unknown"
 				id="ef0e4291-e1ae-4433-ac58-af4448cbe237"
-				name="ResetUpload"
+				name="Btn_Reset"
 				refimgid="818dfcfc-7a21-4b57-a845-fc3f5dc414ec"
 				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/button[@controlname='btnResetUpload']/element[@accessiblename='Reset upload']"
 				robustPath="/form[@controlname='RxMainFrame']//element[@accessiblename='Reset upload']"
@@ -5261,7 +5261,7 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 				addcaps="button,control,nativewindow"
 				capname="button"
 				id="739af7a0-64f5-4f41-824f-7966d2217f2b"
-				name="BtnStartUpload"
+				name="Btn_Start"
 				refimgid="2e69109d-1a3e-42eb-8efa-e6af2dcc1574"
 				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/button[@controlname='btnStartUpload']"
 				robustPath="/form[@controlname='RxMainFrame']//button[@controlname='btnStartUpload']"
@@ -5272,12 +5272,11 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 				addcaps="text,control,nativewindow"
 				capname="text"
 				id="829184f6-b2a8-4bcc-8c94-187fee8f2806"
-				name="LblFinished"
+				name="Txt_Finished"
 				refimgid="6eb346f6-a910-4a0d-9441-fee043f3a172"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUpload']/text[@controlname='lblFinished']"
-				robustPath="/form[@controlname='RxMainFrame']//text[@controlname='lblFinished']"
+				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/text[@controlname='lblFinished']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/text[@text='Upload finished']
 				</item>
 				<basepath>
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']

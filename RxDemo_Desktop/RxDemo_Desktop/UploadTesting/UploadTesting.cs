@@ -79,20 +79,8 @@ namespace RxDemo_Desktop.UploadTesting
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUpload.LblFinished' at 56;4.", repo.RxMainFrame.RxTabUpload.LblFinishedInfo, new RecordItemIndex(0));
-            repo.RxMainFrame.RxTabUpload.LblFinished.Click("56;4");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUpload.BtnStartUpload' at 119;14.", repo.RxMainFrame.RxTabUpload.BtnStartUploadInfo, new RecordItemIndex(1));
-            repo.RxMainFrame.RxTabUpload.BtnStartUpload.Click("119;14");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUpload.BtnStartUpload' at -84;149.", repo.RxMainFrame.RxTabUpload.BtnStartUploadInfo, new RecordItemIndex(2));
-            repo.RxMainFrame.RxTabUpload.BtnStartUpload.Click("-84;149");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUpload.ResetUpload' at 96;11.", repo.RxMainFrame.RxTabUpload.ResetUploadInfo, new RecordItemIndex(3));
-            repo.RxMainFrame.RxTabUpload.ResetUpload.Click("96;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUpload.Btn_Start' at Center.", repo.RxMainFrame.RxTabUpload.Btn_StartInfo, new RecordItemIndex(0));
+            repo.RxMainFrame.RxTabUpload.Btn_Start.Click();
             Delay.Milliseconds(0);
             
         }

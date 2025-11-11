@@ -126,7 +126,7 @@
     <Compile Include="AssemblyInfo.cs">
       <id>a6f479ea-9822-446b-afd3-5f48683713d9</id>
     </Compile>
-    <Compile Include="CodeModules\UploadTesting.cs">
+    <Compile Include="CodeModules\TxtVisible.cs">
       <id>f9973c8c-e46b-4379-b6f7-76f1326ec3f6</id>
     </Compile>
     <Compile Include="ImageBased\ImageBased.cs">
@@ -272,7 +272,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>48bf1d48-d323-4775-85df-7cc430ebe47b</id>
     </Content>
-    <Content Include="UploadTesting.rxtst">
+    <Content Include="RxDemo_UploadTesting.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>1a7cd954-d7b7-44c7-9375-8231514fb03a</id>
     </Content>
