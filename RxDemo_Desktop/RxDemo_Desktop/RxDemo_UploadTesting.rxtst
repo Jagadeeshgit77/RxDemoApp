@@ -97,16 +97,32 @@
 			name="UploadTesting"
 			ref="a2df38ee-ad91-42b3-8361-305d6954cb42"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Tab"
+					datasourceid="e888d0f8-eec2-480a-aa20-9225a86aabc8"
+					variableid="43a54ce5-75bb-4d2e-88b3-ac36f004a6a3"
+					variablename="Tab">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="d0c8e816-be70-4826-a48f-e62990197de0"
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="d8c07208-71d6-4d1d-9662-571f2b762b33"
-			name="UploadTesting"
+			id="e2940251-4f39-4373-8d3d-904a3d3d4160"
+			name="TxtVisble"
 			ref="ebf5c768-8929-4524-ba58-a9a22bb183a2"
 			type="UserCode">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
+					variableid="dac86625-9583-4b4e-b8a8-ac351cf12c99"
+					variablename="Speed">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="e5fd37d6-520f-49ba-96a8-a7ad605c3ca7"
@@ -123,6 +139,13 @@
 			<testcase
 			id="e888d0f8-eec2-480a-aa20-9225a86aabc8"
 			name="TC02">
+				<parameters>
+					<param
+					mask="False"
+					name="Tab"
+					value="Upload testing">
+					</param>
+				</parameters>
 			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -152,8 +175,8 @@
 						name="UploadTesting">
 						</testmodule>
 						<testmodule
-						id="d8c07208-71d6-4d1d-9662-571f2b762b33"
-						name="UploadTesting">
+						id="e2940251-4f39-4373-8d3d-904a3d3d4160"
+						name="TxtVisble">
 						</testmodule>
 					</testcase>
 					<testcase

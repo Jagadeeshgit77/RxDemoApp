@@ -99,6 +99,18 @@ namespace RxDemo_Desktop
             set { _DataBase = value; }
         }
 
+        string _Speed = "Slow";
+
+        /// <summary>
+        /// Gets or sets the value of variable Speed.
+        /// </summary>
+        [TestVariable("d7e9eda0-6eeb-4140-8f16-a16bce899209")]
+        public string Speed
+        {
+            get { return _Speed; }
+            set { _Speed = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -409,7 +421,7 @@ namespace RxDemo_Desktop
         [RepositoryFolder("8586da1c-40cb-45cb-92f8-831817af3bb6")]
         public partial class RxTabStandardFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _radiobtn_genderInfo;
+            RepoItemInfo _rdbtn_genderInfo;
             RepoItemInfo _txtfield_firstnameInfo;
             RepoItemInfo _txtfield_lastnameInfo;
             RepoItemInfo _txtfield_ageInfo;
@@ -425,7 +437,7 @@ namespace RxDemo_Desktop
             public RxTabStandardFolder(RepoGenBaseFolder parentFolder) :
                     base("RxTabStandard", "?/?/tabpage[@controlname='RxTabStandard']", parentFolder, 30000, null, false, "8586da1c-40cb-45cb-92f8-831817af3bb6", "")
             {
-                _radiobtn_genderInfo = new RepoItemInfo(this, "RadioBtn_Gender", "?/?/radiobutton[@controltext=$Gender]", "", 30000, null, "65b3885a-3499-4948-9b4a-5227ac0bb026");
+                _rdbtn_genderInfo = new RepoItemInfo(this, "RdBtn_Gender", "?/?/radiobutton[@controltext=$Gender]", "", 30000, null, "65b3885a-3499-4948-9b4a-5227ac0bb026");
                 _txtfield_firstnameInfo = new RepoItemInfo(this, "TxtField_FirstName", "?/?/text[@accessiblename='First name']", "", 30000, null, "1f4ae7d3-20c8-471a-b90a-265c62c2559c");
                 _txtfield_lastnameInfo = new RepoItemInfo(this, "TxtField_LastName", "?/?/text[@accessiblename='Last name']", "", 30000, null, "7c4992d2-1de7-40cf-b455-6afe35f06c96");
                 _txtfield_ageInfo = new RepoItemInfo(this, "TxtField_Age", "?/?/text[@controlname='upDownEdit']", "", 30000, null, "036d5dc0-7501-43c1-99bd-5d5efa5c69c8");
@@ -461,26 +473,26 @@ namespace RxDemo_Desktop
             }
 
             /// <summary>
-            /// The RadioBtn_Gender item.
+            /// The RdBtn_Gender item.
             /// </summary>
             [RepositoryItem("65b3885a-3499-4948-9b4a-5227ac0bb026")]
-            public virtual Ranorex.RadioButton RadioBtn_Gender
+            public virtual Ranorex.RadioButton RdBtn_Gender
             {
                 get
                 {
-                    return _radiobtn_genderInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _rdbtn_genderInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The RadioBtn_Gender item info.
+            /// The RdBtn_Gender item info.
             /// </summary>
             [RepositoryItemInfo("65b3885a-3499-4948-9b4a-5227ac0bb026")]
-            public virtual RepoItemInfo RadioBtn_GenderInfo
+            public virtual RepoItemInfo RdBtn_GenderInfo
             {
                 get
                 {
-                    return _radiobtn_genderInfo;
+                    return _rdbtn_genderInfo;
                 }
             }
 
@@ -1237,6 +1249,7 @@ namespace RxDemo_Desktop
             RepoItemInfo _btn_resetInfo;
             RepoItemInfo _btn_startInfo;
             RepoItemInfo _txt_finishedInfo;
+            RepoItemInfo _rdbtn_speedInfo;
 
             /// <summary>
             /// Creates a new RxTabUpload  folder.
@@ -1247,6 +1260,7 @@ namespace RxDemo_Desktop
                 _btn_resetInfo = new RepoItemInfo(this, "Btn_Reset", "?/?/element[@accessiblename='Reset upload']", "", 30000, null, "ef0e4291-e1ae-4433-ac58-af4448cbe237");
                 _btn_startInfo = new RepoItemInfo(this, "Btn_Start", "button[@controlname='btnStartUpload']", "", 30000, null, "739af7a0-64f5-4f41-824f-7966d2217f2b");
                 _txt_finishedInfo = new RepoItemInfo(this, "Txt_Finished", "text[@text='Upload finished']", "", 30000, null, "829184f6-b2a8-4bcc-8c94-187fee8f2806");
+                _rdbtn_speedInfo = new RepoItemInfo(this, "RdBtn_Speed", "?/?/radiobutton[@text=$Speed]", "", 30000, null, "6337c848-4b3d-465e-8f78-ce279f53024a");
             }
 
             /// <summary>
@@ -1342,6 +1356,30 @@ namespace RxDemo_Desktop
                 get
                 {
                     return _txt_finishedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RdBtn_Speed item.
+            /// </summary>
+            [RepositoryItem("6337c848-4b3d-465e-8f78-ce279f53024a")]
+            public virtual Ranorex.RadioButton RdBtn_Speed
+            {
+                get
+                {
+                    return _rdbtn_speedInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RdBtn_Speed item info.
+            /// </summary>
+            [RepositoryItemInfo("6337c848-4b3d-465e-8f78-ce279f53024a")]
+            public virtual RepoItemInfo RdBtn_SpeedInfo
+            {
+                get
+                {
+                    return _rdbtn_speedInfo;
                 }
             }
         }

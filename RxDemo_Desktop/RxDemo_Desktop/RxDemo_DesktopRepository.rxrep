@@ -101,7 +101,7 @@ name="RxDemo_DesktopRepository">
 				addcaps="radiobutton,control,nativewindow"
 				capname="radiobutton"
 				id="65b3885a-3499-4948-9b4a-5227ac0bb026"
-				name="RadioBtn_Gender"
+				name="RdBtn_Gender"
 				refimgid="87890312-0a8d-4654-bada-5ea5802933b3"
 				robustPath=""
 				searchtimeout="30000ms">
@@ -5278,6 +5278,16 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 				searchtimeout="30000ms">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/text[@text='Upload finished']
 				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="6337c848-4b3d-465e-8f78-ce279f53024a"
+				name="RdBtn_Speed"
+				refimgid="ce943ff1-a4bb-4691-897e-85cd1712ac8d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']/?/?/radiobutton[@text=$Speed]
+				</item>
 				<basepath>
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']
 				</basepath>
@@ -5393,6 +5403,11 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		id="0a182ed5-9e4b-4524-bca1-ca7aae940f7e"
 		name="DataBase">
 			Nicole Wallace (female, 38) Testing
+		</var>
+		<var
+		id="d7e9eda0-6eeb-4140-8f16-a16bce899209"
+		name="Speed">
+			Slow
 		</var>
 	</variables>
 </repository>

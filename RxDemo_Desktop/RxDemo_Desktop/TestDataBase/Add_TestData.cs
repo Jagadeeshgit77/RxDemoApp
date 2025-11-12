@@ -201,8 +201,8 @@ namespace RxDemo_Desktop.TestDataBase
             repo.RxMainFrame.RxTabStandard.TxtField_Age.PressKeys(Age);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.RadioBtn_Gender' at Center.", repo.RxMainFrame.RxTabStandard.RadioBtn_GenderInfo, new RecordItemIndex(10));
-            repo.RxMainFrame.RxTabStandard.RadioBtn_Gender.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.RdBtn_Gender' at Center.", repo.RxMainFrame.RxTabStandard.RdBtn_GenderInfo, new RecordItemIndex(10));
+            repo.RxMainFrame.RxTabStandard.RdBtn_Gender.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.Btn_AddEntry' at Center.", repo.RxMainFrame.RxTabStandard.Btn_AddEntryInfo, new RecordItemIndex(11));

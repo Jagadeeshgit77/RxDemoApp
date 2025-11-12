@@ -33,5 +33,29 @@ namespace RxDemo_Desktop.UploadTesting
             // Your recording specific initialization code goes here.
         }
 
+//        public void Validate_Txt_Finished(RepoItemInfo textInfo)
+//        {
+//            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Upload Testing') on item 'textInfo'.", textInfo);
+//            Validate.AttributeEqual(textInfo, "Text", "Upload Testing");
+//        }
+
+        public void Mouse_Click_Btn_Start(RepoItemInfo buttonInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+            buttonInfo.FindAdapter<Button>().Click();
+        }
+
+        public void validateText(RepoItemInfo buttonInfo, RepoItemInfo textInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+            buttonInfo.FindAdapter<Button>().Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Upload Testing') on item 'textInfo'.", textInfo);
+            Validate.AttributeEqual(textInfo, "Text", "Upload finished");
+        }
+        
+        public void Mouse_Click_Btn_Reset(RepoItemInfo buttonInfo){
+        	buttonInfo.FindAdapter<Button>().Click();
+        }
+
     }
 }

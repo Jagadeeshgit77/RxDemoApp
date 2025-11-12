@@ -24,15 +24,23 @@ namespace RxDemo_Desktop.CodeModules
     /// Description of UploadTesting.
     /// </summary>
     [TestModule("EBF5C768-8929-4524-BA58-A9A22BB183A2", ModuleType.UserCode, 1)]
-    public class UploadTesting : ITestModule
+    public class TxtVisble : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public UploadTesting()
+        public TxtVisble()
         {
             // Do not delete - a parameterless constructor is required!
         }
+        string _Speed = "";
+        [TestVariable("dac86625-9583-4b4e-b8a8-ac351cf12c99")]
+        public string Speed
+        {
+        	get { return _Speed; }
+        	set { _Speed = "Medium"; }
+        }
+        
 
         /// <summary>
         /// Performs the playback of actions in this module.
@@ -45,25 +53,23 @@ namespace RxDemo_Desktop.CodeModules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-        }
-        
-//        bool visible = false;
-//        int timeout = 30000;
-//        int pollingInterval = 500;
-//        int elapsedTime = 0;
-        public void txtVisible(){
-        	RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
+                      
+            RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
+                        
+            rx.RxMainFrame.RxTabUpload.RdBtn_Speed.Click();
+            
+            rx.RxMainFrame.RxTabUpload.Btn_Start.Click();
+            
         	while(!rx.RxMainFrame.RxTabUpload.Txt_Finished.Visible){
         		Thread.Sleep(10000);
         	}
-        	Validate.AttributeEqual(rx.RxMainFrame.RxTabUpload.Txt_FinishedInfo, "Text", "Upload finished");
-        	
-        	rx.RxMainFrame.RxTabUpload.Btn_Reset.Click();
-        	
+            
+            Validate.AttributeEqual(rx.RxMainFrame.RxTabUpload.Txt_FinishedInfo, "Text", "Upload finished");
+                        
+            rx.RxMainFrame.RxTabUpload.Btn_Reset.Click();
+            
+            
+            
         }
-
-       
-        
-        
     }
 }

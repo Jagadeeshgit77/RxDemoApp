@@ -23,5 +23,10 @@
     "Enabled": "True",
     "TestSuite": "RxDemo_UploadTesting",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "RxDemo_DynamicIDs",
+    "RunConfig": "TestRun"
   }
 ]

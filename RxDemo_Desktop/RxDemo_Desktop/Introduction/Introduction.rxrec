@@ -35,7 +35,7 @@ mode="Desktop">
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="48;11"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="0b76059a-0b68-4b49-86fd-726dc31941a3"
@@ -2315,7 +2315,6 @@ CiiigD//2Q==
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/text[@controlname='lblWelcomeMessage']
 				</path>
 				<robustPath>
-					/form[@controlname='RxMainFrame']//text[@controlname='lblWelcomeMessage']
 				</robustPath>
 			</info>
 			<helperscreenshot

@@ -53,6 +53,16 @@ namespace RxDemo_Desktop.ImageBased
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable Tab.
+        /// </summary>
+        [TestVariable("43a54ce5-75bb-4d2e-88b3-ac36f004a6a3")]
+        public string Tab
+        {
+            get { return repo.Tab; }
+            set { repo.Tab = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,39 +89,43 @@ namespace RxDemo_Desktop.ImageBased
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 10;6.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.MenuTab' at Center.", repo.RxMainFrame.MenuTabInfo, new RecordItemIndex(0));
+            repo.RxMainFrame.MenuTab.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 10;6.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(1));
             repo.RxMainFrame.RxTabImageBased.Calendar.Click(new Location(Calendar_Img_Date20, "10;6", Calendar_Img_Date20_Options));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 9;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 9;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(2));
             repo.RxMainFrame.RxTabImageBased.Calendar.Click(new Location(Calendar_Img_Date21, "9;7", Calendar_Img_Date21_Options));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 14;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 14;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(3));
             repo.RxMainFrame.RxTabImageBased.Calendar.Click(new Location(Calendar_Img_Date22, "14;7", Calendar_Img_Date22_Options));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 4;4.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 4;4.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(4));
             repo.RxMainFrame.RxTabImageBased.Calendar.Click(new Location(Calendar_Img_RightArrow, "4;4", Calendar_Img_RightArrow_Options));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 10;6.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 10;6.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(5));
             repo.RxMainFrame.RxTabImageBased.Calendar.Click(new Location(Calendar_Img_Date20_2, "10;6", Calendar_Img_Date20_2_Options));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 9;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 9;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(6));
             repo.RxMainFrame.RxTabImageBased.Calendar.Click(new Location(Calendar_Img_Date21_2, "9;7", Calendar_Img_Date21_2_Options));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 14;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at 14;7.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(7));
             repo.RxMainFrame.RxTabImageBased.Calendar.Click(new Location(Calendar_Img_Date22_2, "14;7", Calendar_Img_Date22_2_Options));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.ChkBox_ShowImage' at 10;8.", repo.RxMainFrame.RxTabImageBased.ChkBox_ShowImageInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.ChkBox_ShowImage' at 10;8.", repo.RxMainFrame.RxTabImageBased.ChkBox_ShowImageInfo, new RecordItemIndex(8));
             repo.RxMainFrame.RxTabImageBased.ChkBox_ShowImage.Click("10;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Img_Cat' with region {X=0,Y=0,Width=402,Height=263}) on item 'RxMainFrame.RxTabImageBased.TheCat'.", repo.RxMainFrame.RxTabImageBased.TheCatInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Img_Cat' with region {X=0,Y=0,Width=402,Height=263}) on item 'RxMainFrame.RxTabImageBased.TheCat'.", repo.RxMainFrame.RxTabImageBased.TheCatInfo, new RecordItemIndex(9));
             Validate.ContainsImage(repo.RxMainFrame.RxTabImageBased.TheCatInfo, TheCat_Img_Cat, TheCat_Img_Cat_Options);
             Delay.Milliseconds(100);
             

@@ -129,6 +129,18 @@
     <Compile Include="CodeModules\TxtVisible.cs">
       <id>f9973c8c-e46b-4379-b6f7-76f1326ec3f6</id>
     </Compile>
+    <Compile Include="DynamicIDs\DynamicIDs.cs">
+      <BoundTo>1330b277-2a5f-41d4-9421-052ab5cf5d1b</BoundTo>
+      <DependentUpon>DynamicIDs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1fc0b531-841a-450e-8536-fa6a90d82b17</id>
+    </Compile>
+    <Compile Include="DynamicIDs\DynamicIDs.UserCode.cs">
+      <BoundTo>1330b277-2a5f-41d4-9421-052ab5cf5d1b</BoundTo>
+      <DependentUpon>DynamicIDs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b084f73-a30b-4abe-8701-463bd06b5b3a</id>
+    </Compile>
     <Compile Include="ImageBased\ImageBased.cs">
       <BoundTo>3adfb7b6-e816-421a-b7c8-8278fef2ef37</BoundTo>
       <DependentUpon>ImageBased.rxrec</DependentUpon>
@@ -260,6 +272,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RxDemo_DynamicIDs.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b4ce3c66-dcb1-40ef-9942-05cb8181f69f</id>
+    </Content>
     <Content Include="RxDemo_ImageBased.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>356e4b6f-c217-4bd9-9ea3-6b3b0e6a9f1a</id>
@@ -278,6 +294,11 @@
     </Content>
     <None Include="app.config">
       <id>2ec40bf6-bd4f-4271-9049-efedd55369d3</id>
+    </None>
+    <None Include="DynamicIDs\DynamicIDs.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>1330b277-2a5f-41d4-9421-052ab5cf5d1b</id>
+      <recordtableid>082f750f-7a3b-49bf-93dc-e787e46107fb</recordtableid>
     </None>
     <None Include="ImageBased\ImageBased.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
@@ -364,6 +385,9 @@
     </Folder>
     <Folder Include="CodeModules">
       <id>afdd1d4b-9c81-48a4-ab8e-8185e724a832</id>
+    </Folder>
+    <Folder Include="DynamicIDs">
+      <id>52c3ff10-6942-44d2-a2b3-12b266a87026</id>
     </Folder>
     <Folder Include="UploadTesting">
       <id>3850e74e-d066-4b56-894b-a549b50c23ba</id>

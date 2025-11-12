@@ -2,38 +2,30 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
-			<testmodule
-			id="0f6deb4f-432f-42e7-a898-f0b351cd3676"
-			name="ImageBased"
-			ref="48b2023e-6039-451c-a2a1-aede9de456a2"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tab"
-					datasourceid="4cc2356c-c745-4c7e-a546-cf5fbdd53f14"
-					variableid="43a54ce5-75bb-4d2e-88b3-ac36f004a6a3"
-					variablename="Tab">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="22fb05f2-4238-4346-b996-6ff8830109c8"
-			name="StartRxDemoApplication"
-			ref="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="c80f42a2-6d9b-4175-ae93-d0a273f51d4f"
-					variableid="6723f1ca-6174-4772-b08b-0dd6c8d83526"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</databinding>
-			</testmodule>
+			<testcase
+			id="1198bc89-1a34-429b-b0e9-439db8e4ab30"
+			name="TC03_CloseApplication">
+			</testcase>
 			<setup
-			id="24ead327-fcfe-40ae-87e0-0742d1b7d14c"
+			id="3d51be2d-9509-4c3e-988b-fa65740be0e6"
 			name="setup">
 			</setup>
+			<testcase
+			id="408065a7-3c52-495c-99d0-8e17f5c2f4ee"
+			name="TC01_OpenApplication">
+				<parameters>
+					<param
+					mask="False"
+					name="Tab"
+					value="Upload testing">
+					</param>
+					<param
+					mask="False"
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testsuite
 			ExportColumnList="None"
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -52,13 +44,13 @@
 			filterblocked="True"
 			filterfailed="True"
 			filtersuccess="True"
-			id="2a236474-fcdf-4122-aad5-2c279d1b9bc1"
+			id="65f228cf-3e43-4407-9e7f-d63c4c31c96a"
 			includeimageschecked="False"
 			includerecordingschecked="False"
 			junitreport="False"
 			junitreportaddtestid="False"
 			junitreportshowerrafterstd="True"
-			name="RxDemo_ImageBased"
+			name="RxDemo_DynamicIDs"
 			overwritefilechecked="False"
 			reportcompress="False"
 			reportdescription=""
@@ -71,33 +63,23 @@
 			showtestmodulefullpath="False"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="94cf113f-acb1-496a-95e3-58dba29e9c6b"
+			name="StartRxDemoApplication"
+			ref="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="979fd2f2-f8e2-484c-87b1-395c0d22c4f8"
+					variableid="6723f1ca-6174-4772-b08b-0dd6c8d83526"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
-			id="3090709d-fdef-4413-8af8-504fa9a9820a"
-			name="TC03_CloseApplication">
-			</testcase>
-			<testcase
-			id="4cc2356c-c745-4c7e-a546-cf5fbdd53f14"
-			name="TC02_PositiveScenario">
-				<parameters>
-					<param
-					mask="False"
-					name="Tab"
-					value="Image-based automation">
-					</param>
-					<param
-					mask="False"
-					name="Name"
-					value="Jagadeesh">
-					</param>
-				</parameters>
-			</testcase>
-			<teardown
-			id="932b86bf-fcd2-4657-b59a-0d4ecc1cea1c"
-			name="teardown">
-			</teardown>
-			<testcase
-			id="c80f42a2-6d9b-4175-ae93-d0a273f51d4f"
-			name="RxDemo_ImageBased"
+			id="979fd2f2-f8e2-484c-87b1-395c0d22c4f8"
+			name="RxDemo_DynamicIDs"
 			reportlevel="Info;20">
 				<parameters>
 					<param
@@ -107,31 +89,45 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="aab44c20-1e9f-4a07-b359-4cbaa3cdbf97"
+			name="DynamicIDs"
+			ref="082f750f-7a3b-49bf-93dc-e787e46107fb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tab"
+					datasourceid="b5bef3e9-8a1e-45ee-bfc1-19ee30953c60"
+					variableid="43a54ce5-75bb-4d2e-88b3-ac36f004a6a3"
+					variablename="Tab">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
-			id="dc83996d-c124-4177-a533-963c6cee5cd3"
-			name="TC01_OpenApplication">
+			id="b5bef3e9-8a1e-45ee-bfc1-19ee30953c60"
+			name="TC02">
 				<parameters>
 					<param
 					mask="False"
 					name="Tab"
-					value="Introduction">
-					</param>
-					<param
-					mask="False"
-					name="Name"
-					value="Jagadeesh">
+					value="Dynamic IDs">
 					</param>
 				</parameters>
 			</testcase>
+			<teardown
+			id="cea22f7a-016c-46d1-9a92-7c57e56144cf"
+			name="teardown">
+			</teardown>
 			<testmodule
-			id="ef2a20cf-242b-41c3-a328-ad23330e2124"
+			enabled="False"
+			id="fc5ce5b2-4592-4000-9424-007609e1f1cf"
 			name="CloseRxDemoApplication"
 			ref="3695d157-eb85-48a0-81a4-613d493f6448"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="AppProcessID"
-					datasourceid="c80f42a2-6d9b-4175-ae93-d0a273f51d4f"
+					datasourceid="979fd2f2-f8e2-484c-87b1-395c0d22c4f8"
 					variableid="0004bda3-717e-4cbb-a78f-6c7e9eee4285"
 					variablename="CloseAutProcessIDVar">
 					</var>
@@ -140,39 +136,39 @@
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
-			id="2a236474-fcdf-4122-aad5-2c279d1b9bc1"
-			name="RxDemo_ImageBased">
+			id="65f228cf-3e43-4407-9e7f-d63c4c31c96a"
+			name="RxDemo_DynamicIDs">
 				<testcase
-				id="c80f42a2-6d9b-4175-ae93-d0a273f51d4f"
-				name="RxDemo_ImageBased">
+				id="979fd2f2-f8e2-484c-87b1-395c0d22c4f8"
+				name="RxDemo_DynamicIDs">
 					<testcase
-					id="dc83996d-c124-4177-a533-963c6cee5cd3"
+					id="408065a7-3c52-495c-99d0-8e17f5c2f4ee"
 					name="TC01_OpenApplication">
 						<setup
-						id="24ead327-fcfe-40ae-87e0-0742d1b7d14c"
+						id="3d51be2d-9509-4c3e-988b-fa65740be0e6"
 						name="setup">
 							<testmodule
-							id="22fb05f2-4238-4346-b996-6ff8830109c8"
+							id="94cf113f-acb1-496a-95e3-58dba29e9c6b"
 							name="StartRxDemoApplication">
 							</testmodule>
 						</setup>
 					</testcase>
 					<testcase
-					id="4cc2356c-c745-4c7e-a546-cf5fbdd53f14"
-					name="TC02_PositiveScenario">
+					id="b5bef3e9-8a1e-45ee-bfc1-19ee30953c60"
+					name="TC02">
 						<testmodule
-						id="0f6deb4f-432f-42e7-a898-f0b351cd3676"
-						name="ImageBased">
+						id="aab44c20-1e9f-4a07-b359-4cbaa3cdbf97"
+						name="DynamicIDs">
 						</testmodule>
 					</testcase>
 					<testcase
-					id="3090709d-fdef-4413-8af8-504fa9a9820a"
+					id="1198bc89-1a34-429b-b0e9-439db8e4ab30"
 					name="TC03_CloseApplication">
 						<teardown
-						id="932b86bf-fcd2-4657-b59a-0d4ecc1cea1c"
+						id="cea22f7a-016c-46d1-9a92-7c57e56144cf"
 						name="teardown">
 							<testmodule
-							id="ef2a20cf-242b-41c3-a328-ad23330e2124"
+							id="fc5ce5b2-4592-4000-9424-007609e1f1cf"
 							name="CloseRxDemoApplication">
 							</testmodule>
 						</teardown>
@@ -188,16 +184,16 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="3090709d-fdef-4413-8af8-504fa9a9820a">
+			id="1198bc89-1a34-429b-b0e9-439db8e4ab30">
 			</testcontainer>
 			<testcontainer
-			id="4cc2356c-c745-4c7e-a546-cf5fbdd53f14">
+			id="408065a7-3c52-495c-99d0-8e17f5c2f4ee">
 			</testcontainer>
 			<testcontainer
-			id="c80f42a2-6d9b-4175-ae93-d0a273f51d4f">
+			id="979fd2f2-f8e2-484c-87b1-395c0d22c4f8">
 			</testcontainer>
 			<testcontainer
-			id="dc83996d-c124-4177-a533-963c6cee5cd3">
+			id="b5bef3e9-8a1e-45ee-bfc1-19ee30953c60">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

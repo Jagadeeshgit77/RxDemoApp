@@ -53,6 +53,16 @@ namespace RxDemo_Desktop.UploadTesting
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable Tab.
+        /// </summary>
+        [TestVariable("43a54ce5-75bb-4d2e-88b3-ac36f004a6a3")]
+        public string Tab
+        {
+            get { return repo.Tab; }
+            set { repo.Tab = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,8 +89,8 @@ namespace RxDemo_Desktop.UploadTesting
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUpload.Btn_Start' at Center.", repo.RxMainFrame.RxTabUpload.Btn_StartInfo, new RecordItemIndex(0));
-            repo.RxMainFrame.RxTabUpload.Btn_Start.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.MenuTab' at Center.", repo.RxMainFrame.MenuTabInfo, new RecordItemIndex(0));
+            repo.RxMainFrame.MenuTab.Click();
             Delay.Milliseconds(0);
             
         }
