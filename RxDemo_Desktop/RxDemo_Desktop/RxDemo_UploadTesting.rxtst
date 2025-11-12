@@ -40,7 +40,6 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
-			enabled="False"
 			id="34f268a3-6ecc-4687-bbde-e749d063f3f1"
 			name="CloseRxDemoApplication"
 			ref="3695d157-eb85-48a0-81a4-613d493f6448"

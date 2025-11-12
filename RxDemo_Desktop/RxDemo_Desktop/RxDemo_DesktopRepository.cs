@@ -161,6 +161,7 @@ namespace RxDemo_Desktop
             RxDemo_DesktopRepositoryFolders.RxTabImageBasedFolder _rxtabimagebased;
             RxDemo_DesktopRepositoryFolders.RxTabUIElementsFolder _rxtabuielements;
             RxDemo_DesktopRepositoryFolders.RxTabUploadFolder _rxtabupload;
+            RxDemo_DesktopRepositoryFolders.RxTabDynamicIDsFolder _rxtabdynamicids;
             RepoItemInfo _menutabInfo;
 
             /// <summary>
@@ -174,6 +175,7 @@ namespace RxDemo_Desktop
                 _rxtabimagebased = new RxDemo_DesktopRepositoryFolders.RxTabImageBasedFolder(this);
                 _rxtabuielements = new RxDemo_DesktopRepositoryFolders.RxTabUIElementsFolder(this);
                 _rxtabupload = new RxDemo_DesktopRepositoryFolders.RxTabUploadFolder(this);
+                _rxtabdynamicids = new RxDemo_DesktopRepositoryFolders.RxTabDynamicIDsFolder(this);
                 _menutabInfo = new RepoItemInfo(this, "MenuTab", "?/?/tabpage[@accessiblename=$Tab]", "", 30000, null, "5d3f4ca0-21f9-482d-9989-a20d497cad5c");
             }
 
@@ -268,6 +270,15 @@ namespace RxDemo_Desktop
             public virtual RxDemo_DesktopRepositoryFolders.RxTabUploadFolder RxTabUpload
             {
                 get { return _rxtabupload; }
+            }
+
+            /// <summary>
+            /// The RxTabDynamicIDs folder.
+            /// </summary>
+            [RepositoryFolder("5825e7b8-682b-40e0-90d2-f67fb7ffa44c")]
+            public virtual RxDemo_DesktopRepositoryFolders.RxTabDynamicIDsFolder RxTabDynamicIDs
+            {
+                get { return _rxtabdynamicids; }
             }
         }
 
@@ -1380,6 +1391,98 @@ namespace RxDemo_Desktop
                 get
                 {
                     return _rdbtn_speedInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The RxTabDynamicIDsFolder folder.
+        /// </summary>
+        [RepositoryFolder("5825e7b8-682b-40e0-90d2-f67fb7ffa44c")]
+        public partial class RxTabDynamicIDsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _chk_shwdynidInfo;
+            RepoItemInfo _txtfield_curidInfo;
+
+            /// <summary>
+            /// Creates a new RxTabDynamicIDs  folder.
+            /// </summary>
+            public RxTabDynamicIDsFolder(RepoGenBaseFolder parentFolder) :
+                    base("RxTabDynamicIDs", "?/?/tabpage[@controlname='tabPage1']", parentFolder, 30000, null, false, "5825e7b8-682b-40e0-90d2-f67fb7ffa44c", "")
+            {
+                _chk_shwdynidInfo = new RepoItemInfo(this, "Chk_ShwDynID", "checkbox[@controlname='chkShowDynamicID']", "", 30000, null, "2176b1bf-c586-4366-a319-04e111330369");
+                _txtfield_curidInfo = new RepoItemInfo(this, "TxtField_CurID", "?/?/text[@accessiblerole='Text']", "", 30000, null, "fd17986c-0a4e-4ee4-a6c2-320dfaf67a8f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5825e7b8-682b-40e0-90d2-f67fb7ffa44c")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5825e7b8-682b-40e0-90d2-f67fb7ffa44c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Chk_ShwDynID item.
+            /// </summary>
+            [RepositoryItem("2176b1bf-c586-4366-a319-04e111330369")]
+            public virtual Ranorex.CheckBox Chk_ShwDynID
+            {
+                get
+                {
+                    return _chk_shwdynidInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Chk_ShwDynID item info.
+            /// </summary>
+            [RepositoryItemInfo("2176b1bf-c586-4366-a319-04e111330369")]
+            public virtual RepoItemInfo Chk_ShwDynIDInfo
+            {
+                get
+                {
+                    return _chk_shwdynidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TxtField_CurID item.
+            /// </summary>
+            [RepositoryItem("fd17986c-0a4e-4ee4-a6c2-320dfaf67a8f")]
+            public virtual Ranorex.Text TxtField_CurID
+            {
+                get
+                {
+                    return _txtfield_curidInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtField_CurID item info.
+            /// </summary>
+            [RepositoryItemInfo("fd17986c-0a4e-4ee4-a6c2-320dfaf67a8f")]
+            public virtual RepoItemInfo TxtField_CurIDInfo
+            {
+                get
+                {
+                    return _txtfield_curidInfo;
                 }
             }
         }

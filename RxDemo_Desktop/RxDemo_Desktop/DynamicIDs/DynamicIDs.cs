@@ -41,6 +41,8 @@ namespace RxDemo_Desktop.DynamicIDs
         /// </summary>
         public DynamicIDs()
         {
+            firstID = "";
+            secID = "";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace RxDemo_Desktop.DynamicIDs
         }
 
 #region Variables
+
+        string _firstID;
+
+        /// <summary>
+        /// Gets or sets the value of variable firstID.
+        /// </summary>
+        [TestVariable("636d8408-6b64-41b6-be19-aa84e56997cb")]
+        public string firstID
+        {
+            get { return _firstID; }
+            set { _firstID = value; }
+        }
+
+        string _secID;
+
+        /// <summary>
+        /// Gets or sets the value of variable secID.
+        /// </summary>
+        [TestVariable("0ff0a4fd-f827-4dd5-9386-c793fe2ad091")]
+        public string secID
+        {
+            get { return _secID; }
+            set { _secID = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Tab.
@@ -91,6 +117,26 @@ namespace RxDemo_Desktop.DynamicIDs
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.MenuTab' at Center.", repo.RxMainFrame.MenuTabInfo, new RecordItemIndex(0));
             repo.RxMainFrame.MenuTab.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID' at 7;9.", repo.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynIDInfo, new RecordItemIndex(1));
+            repo.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID.Click("7;9");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'RxMainFrame.RxTabDynamicIDs.TxtField_CurID' and assigning its value to variable 'firstID'.", repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, new RecordItemIndex(2));
+            firstID = repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurID.Element.GetAttributeValueText("Text");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID' at Center.", repo.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynIDInfo, new RecordItemIndex(3));
+            repo.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'RxMainFrame.RxTabDynamicIDs.TxtField_CurID' and assigning its value to variable 'secID'.", repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, new RecordItemIndex(4));
+            secID = repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurID.Element.GetAttributeValueText("Text");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual ($firstID!=$secID) on item 'RxMainFrame.RxTabDynamicIDs.TxtField_CurID'.", repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, new RecordItemIndex(5));
+            Validate.AttributeNotEqual(repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, firstID, secID);
             Delay.Milliseconds(0);
             
         }

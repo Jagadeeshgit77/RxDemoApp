@@ -126,6 +126,9 @@
     <Compile Include="AssemblyInfo.cs">
       <id>a6f479ea-9822-446b-afd3-5f48683713d9</id>
     </Compile>
+    <Compile Include="CodeModules\DynamicIDs.cs">
+      <id>d18a5a2c-1552-44db-8423-12ac9f7488b4</id>
+    </Compile>
     <Compile Include="CodeModules\TxtVisible.cs">
       <id>f9973c8c-e46b-4379-b6f7-76f1326ec3f6</id>
     </Compile>

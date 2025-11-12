@@ -5292,6 +5292,39 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUpload']
 				</basepath>
 			</folder>
+			<folder
+			capname="tabpage"
+			id="5825e7b8-682b-40e0-90d2-f67fb7ffa44c"
+			isrooted="True"
+			name="RxTabDynamicIDs"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="2176b1bf-c586-4366-a319-04e111330369"
+				name="Chk_ShwDynID"
+				refimgid="b7cf8599-c8af-4842-8153-ecb62a714941"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='tabPage1']/checkbox[@controlname='chkShowDynamicID']"
+				robustPath="/form[@controlname='RxMainFrame']//checkbox[@controlname='chkShowDynamicID']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='tabPage1']/checkbox[@controlname='chkShowDynamicID']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="fd17986c-0a4e-4ee4-a6c2-320dfaf67a8f"
+				name="TxtField_CurID"
+				refimgid="eecb3f2d-b734-49b4-9dcf-2d9e7efd3991"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='tabPage1']/text[@controlname='txtBoxID']/text[@accessiblerole='Text']"
+				robustPath="/form[@controlname='RxMainFrame']//text[@controlname='txtBoxID']/text[@accessiblerole='Text']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='tabPage1']/?/?/text[@accessiblerole='Text']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='tabPage1']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='RxMainFrame']
 			</basepath>
