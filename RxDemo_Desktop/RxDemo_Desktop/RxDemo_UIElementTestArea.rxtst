@@ -118,6 +118,12 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="d8f1f376-d09c-44c7-9674-164b8de563e7"
+			name="GroupBox_Tree"
+			ref="5c60d8bb-9efa-4f85-bbf9-00813aa0fad3"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="e32936ee-8eea-4b38-9888-d49606a5b4df"
 			name="teardown">
@@ -182,6 +188,10 @@
 						<testmodule
 						id="5573192b-c094-45ff-8b7c-a30d9e9ee1b4"
 						name="GroupBox_List">
+						</testmodule>
+						<testmodule
+						id="d8f1f376-d09c-44c7-9674-164b8de563e7"
+						name="GroupBox_Tree">
 						</testmodule>
 					</testcase>
 					<testcase

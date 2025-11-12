@@ -5178,61 +5178,83 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 				searchtimeout="30000ms">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?//*//button[@text='Down']
 				</item>
-				<item
-				addcaps="tree,accessible"
-				capname="tree"
-				id="ce1fcc2d-0dee-48c4-b171-551bce4e43ac"
-				name="TreeView"
-				refimgid="34e9773d-0ab4-40ac-b988-ebf20a06d935"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree[@accessiblename='Tree view']"
-				robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
-				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/tree[@accessiblename='Tree view']
-				</item>
-				<item
-				addcaps="treeitem,accessible,accessibletreeitem"
-				capname="treeitem"
-				id="bf217170-912a-447a-8939-9916f0db7604"
-				name="RanorexAutomationHelpers"
-				refimgid="d3d81c32-1444-432b-8e37-88d9799575ec"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree/treeitem[@accessiblename>'Hands-on Application Topi']/treeitem[@accessiblename>'Ranorex Automation Helper']"
-				robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
-				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/tree[@controlname='treTestTreeView']//treeitem[@accessiblename&gt;'Ranorex Automation Helper']
-				</item>
-				<item
-				addcaps="button"
-				capname="button"
-				id="ba4d659b-0e84-4339-afac-8f774afdb06c"
-				name="ButtonUp"
-				refimgid="2e23800d-51ef-46b5-bd55-87057b6a8ce7"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/scrollbar[@style='Vertical']/button[@text='Up']"
-				robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
-				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/tree[@controlname='treTestTreeView']/?/?/button[@text='Up']
-				</item>
-				<item
-				addcaps="treeitem,accessible,accessibletreeitem"
-				capname="treeitem"
-				id="5e744527-7063-49d8-b8a2-3df9ef37afcf"
-				name="RanorexStudioFundamentals"
-				refimgid="f2d1b15e-9e7a-4c99-a601-40621f750c35"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree/treeitem[@accessiblename>'Ranorex Studio fundamenta']"
-				robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
-				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/tree[@controlname='treTestTreeView']/?/?/treeitem[@accessiblename&gt;'Ranorex Studio fundamenta']
-				</item>
-				<item
-				addcaps="treeitem,accessible,accessibletreeitem"
-				capname="treeitem"
-				id="3e7fd442-9884-4a81-839e-8224bb05e722"
-				name="Actions"
-				refimgid="c999758f-9e7e-4891-9526-63174e71ab20"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree/treeitem[@accessiblename>'Ranorex Studio fundamenta']/treeitem[@accessiblename='Actions']"
-				robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
-				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/tree[@controlname='treTestTreeView']//treeitem[@accessiblename='Actions']
-				</item>
+				<folder
+				capname="unknown"
+				id="482ca607-e29d-41cc-a0c3-05fce2a8eaae"
+				isrooted="False"
+				name="Tree"
+				searchtimeout="0ms">
+					<item
+					addcaps="tree,accessible"
+					capname="tree"
+					id="ce1fcc2d-0dee-48c4-b171-551bce4e43ac"
+					name="TreeView"
+					refimgid="34e9773d-0ab4-40ac-b988-ebf20a06d935"
+					refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree[@accessiblename='Tree view']"
+					robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/tree[@accessiblename='Tree view']
+					</item>
+					<item
+					addcaps="treeitem,accessible,accessibletreeitem"
+					capname="treeitem"
+					id="bf217170-912a-447a-8939-9916f0db7604"
+					name="RanorexAutomationHelpers"
+					refimgid="d3d81c32-1444-432b-8e37-88d9799575ec"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?//treeitem[@accessiblename&gt;'Ranorex Automation Helper']
+					</item>
+					<item
+					addcaps="treeitem,accessible,accessibletreeitem"
+					capname="treeitem"
+					id="5e744527-7063-49d8-b8a2-3df9ef37afcf"
+					name="RanorexStudioFundamentals"
+					refimgid="f2d1b15e-9e7a-4c99-a601-40621f750c35"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/?/treeitem[@accessiblename&gt;'Ranorex Studio fundamentals']
+					</item>
+					<item
+					addcaps="treeitem,accessible,accessibletreeitem"
+					capname="treeitem"
+					id="3e7fd442-9884-4a81-839e-8224bb05e722"
+					name="Actions"
+					refimgid="c999758f-9e7e-4891-9526-63174e71ab20"
+					refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree/treeitem[@accessiblename>'Ranorex Studio fundamenta']/treeitem[@accessiblename='Actions']"
+					robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/tree[@controlname='treTestTreeView']//treeitem[@accessiblename='Actions']
+					</item>
+				</folder>
+				<folder
+				capname="unknown"
+				id="1e0fb441-60ed-41ff-a1ac-468c8b7b5989"
+				isrooted="False"
+				name="Table"
+				searchtimeout="0ms">
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
+					id="ac53db35-0545-4e36-bf4e-195ac9179e94"
+					name="Table_Row0"
+					refimgid="91a761b5-c339-4dac-beec-5002f95f15f0"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/?/cell[@accessiblename='FirstName Row 0']
+					</item>
+					<item
+					addcaps="button,control,nativewindow"
+					capname="button"
+					id="e70be420-8249-476b-94ab-9d0981638b72"
+					name="Btn_Shuffle"
+					refimgid="4fc417c4-73fd-4c8a-aa2f-fec6d521d348"
+					refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/container/button[@controlname='btnButton2']"
+					robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/button[@controlname='btnButton2']
+					</item>
+				</folder>
 				<basepath>
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']
 				</basepath>

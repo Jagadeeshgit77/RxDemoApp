@@ -24,29 +24,29 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The GroupBox_TreeView recording.
+    ///The GroupBox_Table recording.
     /// </summary>
-    [TestModule("36e7479f-98aa-4a73-94a5-c57a74aaf8e1", ModuleType.Recording, 1)]
-    public partial class GroupBox_TreeView : ITestModule
+    [TestModule("114f5dd4-c263-4b9b-932a-093cd74bc96e", ModuleType.Recording, 1)]
+    public partial class GroupBox_Table : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RxDemo_Desktop.RxDemo_DesktopRepository repository.
         /// </summary>
         public static global::RxDemo_Desktop.RxDemo_DesktopRepository repo = global::RxDemo_Desktop.RxDemo_DesktopRepository.Instance;
 
-        static GroupBox_TreeView instance = new GroupBox_TreeView();
+        static GroupBox_Table instance = new GroupBox_Table();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public GroupBox_TreeView()
+        public GroupBox_Table()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static GroupBox_TreeView Instance
+        public static GroupBox_Table Instance
         {
             get { return instance; }
         }
@@ -79,32 +79,12 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.TreeView' at Center.", repo.RxMainFrame.RxTabUIElements.TreeViewInfo, new RecordItemIndex(0));
-            repo.RxMainFrame.RxTabUIElements.TreeView.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.Table.Table_Row0' at 0;0.", repo.RxMainFrame.RxTabUIElements.Table.Table_Row0Info, new RecordItemIndex(0));
+            repo.RxMainFrame.RxTabUIElements.Table.Table_Row0.Click("0;0");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.RanorexAutomationHelpers' at 29;4.", repo.RxMainFrame.RxTabUIElements.RanorexAutomationHelpersInfo, new RecordItemIndex(1));
-            repo.RxMainFrame.RxTabUIElements.RanorexAutomationHelpers.Click("29;4");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.ButtonUp' at 10;13.", repo.RxMainFrame.RxTabUIElements.ButtonUpInfo, new RecordItemIndex(2));
-            repo.RxMainFrame.RxTabUIElements.ButtonUp.Click("10;13");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.ButtonUp' at 10;13.", repo.RxMainFrame.RxTabUIElements.ButtonUpInfo, new RecordItemIndex(3));
-            repo.RxMainFrame.RxTabUIElements.ButtonUp.Click("10;13");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.RanorexStudioFundamentals' at 5;11.", repo.RxMainFrame.RxTabUIElements.RanorexStudioFundamentalsInfo, new RecordItemIndex(4));
-            repo.RxMainFrame.RxTabUIElements.RanorexStudioFundamentals.Click("5;11");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.TreeView' at Center.", repo.RxMainFrame.RxTabUIElements.TreeViewInfo, new RecordItemIndex(5));
-            repo.RxMainFrame.RxTabUIElements.TreeView.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.Actions' at 15;10.", repo.RxMainFrame.RxTabUIElements.ActionsInfo, new RecordItemIndex(6));
-            repo.RxMainFrame.RxTabUIElements.Actions.Click("15;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.Table.Btn_Shuffle' at 0;0.", repo.RxMainFrame.RxTabUIElements.Table.Btn_ShuffleInfo, new RecordItemIndex(1));
+            repo.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click("0;0");
             Delay.Milliseconds(0);
             
         }

@@ -957,16 +957,13 @@ namespace RxDemo_Desktop
         [RepositoryFolder("15a10b87-dd1c-4fc9-b4c9-d836d69a0274")]
         public partial class RxTabUIElementsFolder : RepoGenBaseFolder
         {
+            RxDemo_DesktopRepositoryFolders.TreeFolder _tree;
+            RxDemo_DesktopRepositoryFolders.TableFolder _table;
             RepoItemInfo _btn_resetInfo;
             RepoItemInfo _grpbox_greenInfo;
             RepoItemInfo _rdbtn_lightInfo;
             RepoItemInfo _lstbox_optionsInfo;
             RepoItemInfo _btn_downInfo;
-            RepoItemInfo _treeviewInfo;
-            RepoItemInfo _ranorexautomationhelpersInfo;
-            RepoItemInfo _buttonupInfo;
-            RepoItemInfo _ranorexstudiofundamentalsInfo;
-            RepoItemInfo _actionsInfo;
 
             /// <summary>
             /// Creates a new RxTabUIElements  folder.
@@ -974,16 +971,13 @@ namespace RxDemo_Desktop
             public RxTabUIElementsFolder(RepoGenBaseFolder parentFolder) :
                     base("RxTabUIElements", "?/?/tabpage[@controlname='RxTabUIElements']", parentFolder, 30000, null, false, "15a10b87-dd1c-4fc9-b4c9-d836d69a0274", "")
             {
+                _tree = new RxDemo_DesktopRepositoryFolders.TreeFolder(this);
+                _table = new RxDemo_DesktopRepositoryFolders.TableFolder(this);
                 _btn_resetInfo = new RepoItemInfo(this, "Btn_Reset", "?/?/button[@controlname='btnButton1']", "", 30000, null, "960f1b5a-0ed2-4bb9-86da-2bf3dfc573e0");
                 _grpbox_greenInfo = new RepoItemInfo(this, "grpBox_Green", "container[@controlname='grpBox']/?/?/container[@controlname='pnlColourPanel']", "", 30000, null, "7e18981c-2501-4b93-9f82-249c26eec1cb");
                 _rdbtn_lightInfo = new RepoItemInfo(this, "rdBtn_Light", "container[@controlname='grpBox']/?/?/radiobutton[@controlname='rdbGreenLight']", "", 30000, null, "daf74291-9495-4be0-84f7-9d57cfb59c8d");
                 _lstbox_optionsInfo = new RepoItemInfo(this, "Lstbox_Options", ".//?/listitem[@accessiblename>'Hands-on application topics']", "", 30000, null, "8252159a-0dac-4210-8c49-ff7eb4b582b9");
                 _btn_downInfo = new RepoItemInfo(this, "Btn_Down", "?//*//button[@text='Down']", "", 30000, null, "8b5d3ff8-9c4a-447f-b705-4c17d46917ce");
-                _treeviewInfo = new RepoItemInfo(this, "TreeView", "?/?/tree[@accessiblename='Tree view']", "", 30000, null, "ce1fcc2d-0dee-48c4-b171-551bce4e43ac");
-                _ranorexautomationhelpersInfo = new RepoItemInfo(this, "RanorexAutomationHelpers", "tree[@controlname='treTestTreeView']//treeitem[@accessiblename>'Ranorex Automation Helper']", "", 30000, null, "bf217170-912a-447a-8939-9916f0db7604");
-                _buttonupInfo = new RepoItemInfo(this, "ButtonUp", "tree[@controlname='treTestTreeView']/?/?/button[@text='Up']", "", 30000, null, "ba4d659b-0e84-4339-afac-8f774afdb06c");
-                _ranorexstudiofundamentalsInfo = new RepoItemInfo(this, "RanorexStudioFundamentals", "tree[@controlname='treTestTreeView']/?/?/treeitem[@accessiblename>'Ranorex Studio fundamenta']", "", 30000, null, "5e744527-7063-49d8-b8a2-3df9ef37afcf");
-                _actionsInfo = new RepoItemInfo(this, "Actions", "tree[@controlname='treTestTreeView']//treeitem[@accessiblename='Actions']", "", 30000, null, "3e7fd442-9884-4a81-839e-8224bb05e722");
             }
 
             /// <summary>
@@ -1131,6 +1125,60 @@ namespace RxDemo_Desktop
             }
 
             /// <summary>
+            /// The Tree folder.
+            /// </summary>
+            [RepositoryFolder("482ca607-e29d-41cc-a0c3-05fce2a8eaae")]
+            public virtual RxDemo_DesktopRepositoryFolders.TreeFolder Tree
+            {
+                get { return _tree; }
+            }
+
+            /// <summary>
+            /// The Table folder.
+            /// </summary>
+            [RepositoryFolder("1e0fb441-60ed-41ff-a1ac-468c8b7b5989")]
+            public virtual RxDemo_DesktopRepositoryFolders.TableFolder Table
+            {
+                get { return _table; }
+            }
+        }
+
+        /// <summary>
+        /// The TreeFolder folder.
+        /// </summary>
+        [RepositoryFolder("482ca607-e29d-41cc-a0c3-05fce2a8eaae")]
+        public partial class TreeFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _treeviewInfo;
+            RepoItemInfo _ranorexautomationhelpersInfo;
+            RepoItemInfo _ranorexstudiofundamentalsInfo;
+            RepoItemInfo _actionsInfo;
+
+            /// <summary>
+            /// Creates a new Tree  folder.
+            /// </summary>
+            public TreeFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tree", "", parentFolder, 0, null, false, "482ca607-e29d-41cc-a0c3-05fce2a8eaae", "")
+            {
+                _treeviewInfo = new RepoItemInfo(this, "TreeView", "?/?/tree[@accessiblename='Tree view']", "", 30000, null, "ce1fcc2d-0dee-48c4-b171-551bce4e43ac");
+                _ranorexautomationhelpersInfo = new RepoItemInfo(this, "RanorexAutomationHelpers", "?//treeitem[@accessiblename>'Ranorex Automation Helper']", "", 30000, null, "bf217170-912a-447a-8939-9916f0db7604");
+                _ranorexstudiofundamentalsInfo = new RepoItemInfo(this, "RanorexStudioFundamentals", "?/?/?/treeitem[@accessiblename>'Ranorex Studio fundamentals']", "", 30000, null, "5e744527-7063-49d8-b8a2-3df9ef37afcf");
+                _actionsInfo = new RepoItemInfo(this, "Actions", "tree[@controlname='treTestTreeView']//treeitem[@accessiblename='Actions']", "", 30000, null, "3e7fd442-9884-4a81-839e-8224bb05e722");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("482ca607-e29d-41cc-a0c3-05fce2a8eaae")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
             /// The TreeView item.
             /// </summary>
             [RepositoryItem("ce1fcc2d-0dee-48c4-b171-551bce4e43ac")]
@@ -1179,30 +1227,6 @@ namespace RxDemo_Desktop
             }
 
             /// <summary>
-            /// The ButtonUp item.
-            /// </summary>
-            [RepositoryItem("ba4d659b-0e84-4339-afac-8f774afdb06c")]
-            public virtual Ranorex.Button ButtonUp
-            {
-                get
-                {
-                    return _buttonupInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonUp item info.
-            /// </summary>
-            [RepositoryItemInfo("ba4d659b-0e84-4339-afac-8f774afdb06c")]
-            public virtual RepoItemInfo ButtonUpInfo
-            {
-                get
-                {
-                    return _buttonupInfo;
-                }
-            }
-
-            /// <summary>
             /// The RanorexStudioFundamentals item.
             /// </summary>
             [RepositoryItem("5e744527-7063-49d8-b8a2-3df9ef37afcf")]
@@ -1247,6 +1271,86 @@ namespace RxDemo_Desktop
                 get
                 {
                     return _actionsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TableFolder folder.
+        /// </summary>
+        [RepositoryFolder("1e0fb441-60ed-41ff-a1ac-468c8b7b5989")]
+        public partial class TableFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _table_row0Info;
+            RepoItemInfo _btn_shuffleInfo;
+
+            /// <summary>
+            /// Creates a new Table  folder.
+            /// </summary>
+            public TableFolder(RepoGenBaseFolder parentFolder) :
+                    base("Table", "", parentFolder, 0, null, false, "1e0fb441-60ed-41ff-a1ac-468c8b7b5989", "")
+            {
+                _table_row0Info = new RepoItemInfo(this, "Table_Row0", "?/?/?/cell[@accessiblename='FirstName Row 0']", "", 30000, null, "ac53db35-0545-4e36-bf4e-195ac9179e94");
+                _btn_shuffleInfo = new RepoItemInfo(this, "Btn_Shuffle", "?/?/button[@controlname='btnButton2']", "", 30000, null, "e70be420-8249-476b-94ab-9d0981638b72");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1e0fb441-60ed-41ff-a1ac-468c8b7b5989")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Table_Row0 item.
+            /// </summary>
+            [RepositoryItem("ac53db35-0545-4e36-bf4e-195ac9179e94")]
+            public virtual Ranorex.Cell Table_Row0
+            {
+                get
+                {
+                    return _table_row0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Table_Row0 item info.
+            /// </summary>
+            [RepositoryItemInfo("ac53db35-0545-4e36-bf4e-195ac9179e94")]
+            public virtual RepoItemInfo Table_Row0Info
+            {
+                get
+                {
+                    return _table_row0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Btn_Shuffle item.
+            /// </summary>
+            [RepositoryItem("e70be420-8249-476b-94ab-9d0981638b72")]
+            public virtual Ranorex.Button Btn_Shuffle
+            {
+                get
+                {
+                    return _btn_shuffleInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Btn_Shuffle item info.
+            /// </summary>
+            [RepositoryItemInfo("e70be420-8249-476b-94ab-9d0981638b72")]
+            public virtual RepoItemInfo Btn_ShuffleInfo
+            {
+                get
+                {
+                    return _btn_shuffleInfo;
                 }
             }
         }

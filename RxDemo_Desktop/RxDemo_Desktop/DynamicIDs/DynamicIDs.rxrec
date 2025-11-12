@@ -1106,6 +1106,32 @@ FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 				</robustPath>
 			</info>
 		</getvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0d6661b0-0965-4187-84fb-ce4cb89b62d1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2176b1bf-c586-4366-a319-04e111330369"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='tabPage1']/checkbox[@controlname='chkShowDynamicID']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<validationitem
 		action="AttributeNotEqual"
 		enabled="True"

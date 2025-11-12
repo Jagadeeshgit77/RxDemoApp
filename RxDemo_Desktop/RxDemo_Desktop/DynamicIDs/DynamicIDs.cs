@@ -135,7 +135,11 @@ namespace RxDemo_Desktop.DynamicIDs
             secID = repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurID.Element.GetAttributeValueText("Text");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual ($firstID!=$secID) on item 'RxMainFrame.RxTabDynamicIDs.TxtField_CurID'.", repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID' at Center.", repo.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynIDInfo, new RecordItemIndex(5));
+            repo.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual ($firstID!=$secID) on item 'RxMainFrame.RxTabDynamicIDs.TxtField_CurID'.", repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, new RecordItemIndex(6));
             Validate.AttributeNotEqual(repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, firstID, secID);
             Delay.Milliseconds(0);
             

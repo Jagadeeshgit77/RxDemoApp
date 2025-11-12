@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace RxDemo_Desktop.UI_Element_Test_Area
 {
-    public partial class GroupBox_TreeView
+    public partial class GroupBox_Tree
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

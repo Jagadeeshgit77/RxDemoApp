@@ -129,6 +129,9 @@
     <Compile Include="CodeModules\DynamicIDs.cs">
       <id>d18a5a2c-1552-44db-8423-12ac9f7488b4</id>
     </Compile>
+    <Compile Include="CodeModules\shuffleTable.cs">
+      <id>6c0718de-06d9-46d8-9444-943de9b1bad1</id>
+    </Compile>
     <Compile Include="CodeModules\TxtVisible.cs">
       <id>f9973c8c-e46b-4379-b6f7-76f1326ec3f6</id>
     </Compile>
@@ -225,17 +228,29 @@
       <UserCode>true</UserCode>
       <id>babf716a-fad5-4282-946f-0a493f2d20f1</id>
     </Compile>
-    <Compile Include="UI-Element Test Area\GroupBox_TreeView.cs">
-      <BoundTo>f6816aba-76bc-4e01-9657-4f7a1a71f2b8</BoundTo>
-      <DependentUpon>GroupBox_TreeView.rxrec</DependentUpon>
+    <Compile Include="UI-Element Test Area\GroupBox_Table.cs">
+      <BoundTo>95c4b951-6141-4a41-9872-6fd3841ca3c8</BoundTo>
+      <DependentUpon>GroupBox_Table.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>2e92d389-ba00-4285-9869-d60e127de2d6</id>
+      <id>82cec1d2-df37-4a11-ad36-9de64145f932</id>
     </Compile>
-    <Compile Include="UI-Element Test Area\GroupBox_TreeView.UserCode.cs">
-      <BoundTo>f6816aba-76bc-4e01-9657-4f7a1a71f2b8</BoundTo>
-      <DependentUpon>GroupBox_TreeView.rxrec</DependentUpon>
+    <Compile Include="UI-Element Test Area\GroupBox_Table.UserCode.cs">
+      <BoundTo>95c4b951-6141-4a41-9872-6fd3841ca3c8</BoundTo>
+      <DependentUpon>GroupBox_Table.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>cb0a3847-1b12-4cb1-bcf4-1659da5c328a</id>
+      <id>751289a3-7aee-4099-869e-96824b5107cc</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_Tree.cs">
+      <BoundTo>08d5fac2-1550-461a-a5b1-db545838372f</BoundTo>
+      <DependentUpon>GroupBox_Tree.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16d2b65a-7d6c-4c30-9e9e-cfc168968db9</id>
+    </Compile>
+    <Compile Include="UI-Element Test Area\GroupBox_Tree.UserCode.cs">
+      <BoundTo>08d5fac2-1550-461a-a5b1-db545838372f</BoundTo>
+      <DependentUpon>GroupBox_Tree.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>61a92b90-13c6-4afd-ad2a-6eee2b78ff49</id>
     </Compile>
     <Compile Include="UploadTesting\UploadTesting.cs">
       <BoundTo>8faa386b-65eb-4e5c-9800-e3d9911eed7d</BoundTo>
@@ -348,10 +363,15 @@
       <id>c1a171a0-61cc-4dc4-abc2-8feb3dbbca83</id>
       <recordtableid>8f825dfa-6567-4f46-98a2-a00e35a53bdf</recordtableid>
     </None>
-    <None Include="UI-Element Test Area\GroupBox_TreeView.rxrec">
+    <None Include="UI-Element Test Area\GroupBox_Table.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
-      <id>f6816aba-76bc-4e01-9657-4f7a1a71f2b8</id>
-      <recordtableid>36e7479f-98aa-4a73-94a5-c57a74aaf8e1</recordtableid>
+      <id>95c4b951-6141-4a41-9872-6fd3841ca3c8</id>
+      <recordtableid>114f5dd4-c263-4b9b-932a-093cd74bc96e</recordtableid>
+    </None>
+    <None Include="UI-Element Test Area\GroupBox_Tree.rxrec">
+      <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
+      <id>08d5fac2-1550-461a-a5b1-db545838372f</id>
+      <recordtableid>5c60d8bb-9efa-4f85-bbf9-00813aa0fad3</recordtableid>
     </None>
     <None Include="UploadTesting\UploadTesting.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
