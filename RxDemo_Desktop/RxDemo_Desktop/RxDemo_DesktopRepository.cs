@@ -163,6 +163,7 @@ namespace RxDemo_Desktop
             RxDemo_DesktopRepositoryFolders.RxTabUploadFolder _rxtabupload;
             RxDemo_DesktopRepositoryFolders.RxTabDynamicIDsFolder _rxtabdynamicids;
             RepoItemInfo _menutabInfo;
+            RepoItemInfo _rxbuttonexitInfo;
 
             /// <summary>
             /// Creates a new RxMainFrame  folder.
@@ -177,6 +178,7 @@ namespace RxDemo_Desktop
                 _rxtabupload = new RxDemo_DesktopRepositoryFolders.RxTabUploadFolder(this);
                 _rxtabdynamicids = new RxDemo_DesktopRepositoryFolders.RxTabDynamicIDsFolder(this);
                 _menutabInfo = new RepoItemInfo(this, "MenuTab", "?/?/tabpage[@accessiblename=$Tab]", "", 30000, null, "5d3f4ca0-21f9-482d-9989-a20d497cad5c");
+                _rxbuttonexitInfo = new RepoItemInfo(this, "RxButtonExit", "button[@controlname='RxButtonExit']", "button[@controlname='RxButtonExit']", 30000, null, "367937f8-620e-4efc-82ed-488b0ca791d4");
             }
 
             /// <summary>
@@ -224,6 +226,30 @@ namespace RxDemo_Desktop
                 get
                 {
                     return _menutabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RxButtonExit item.
+            /// </summary>
+            [RepositoryItem("367937f8-620e-4efc-82ed-488b0ca791d4")]
+            public virtual Ranorex.Button RxButtonExit
+            {
+                get
+                {
+                    return _rxbuttonexitInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RxButtonExit item info.
+            /// </summary>
+            [RepositoryItemInfo("367937f8-620e-4efc-82ed-488b0ca791d4")]
+            public virtual RepoItemInfo RxButtonExitInfo
+            {
+                get
+                {
+                    return _rxbuttonexitInfo;
                 }
             }
 

@@ -99,6 +99,10 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
             repo.RxMainFrame.RxTabUIElements.Lstbox_Options.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by 120 units.", new RecordItemIndex(5));
+            Mouse.ScrollWheel(120);
+            Delay.Milliseconds(300);
+            
         }
 
 #region Image Feature Data

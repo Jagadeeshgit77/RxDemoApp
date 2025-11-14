@@ -49,17 +49,20 @@ namespace RxDemo_Desktop.CodeModules
             
             RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
             
-            string rowText = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.GetAttributeValueText("Text");
+            //string rowText = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.GetAttributeValueText("Text");
             
-            
-            while(!rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
-            	rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
-            	Delay.Milliseconds(500);
-            	Report.Info("Current Row Text: " + rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info);
-            	if(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
-            		
+            if(!rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
+            		rx.RxMainFrame.RxButtonExit.Click();
             	}
-        }
+            
+//            while(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
+//            	rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
+//            	Delay.Milliseconds(500);
+//            	//Report.Info("Current Row Text: " + rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info);
+//            	if(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
+//            		rx.RxMainFrame.RxButtonExit.Click();
+//            	}
+        //}
             	
             
                     
