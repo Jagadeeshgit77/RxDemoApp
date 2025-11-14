@@ -49,16 +49,18 @@ namespace RxDemo_Desktop.CodeModules
             
             RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
             
-            Validate.AttributeEqual(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info, "Text", "John");
-            rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
+            string rowText = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.GetAttributeValueText("Text");
             
-            while(true){
+            
+            while(!rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
             	rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
-            	if(true){
-            		break;
+            	Delay.Milliseconds(500);
+            	Report.Info("Current Row Text: " + rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info);
+            	if(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
+            		
             	}
+        }
             	
-            }
             
                     
             

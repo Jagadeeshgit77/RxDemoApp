@@ -1290,7 +1290,7 @@ namespace RxDemo_Desktop
             public TableFolder(RepoGenBaseFolder parentFolder) :
                     base("Table", "", parentFolder, 0, null, false, "1e0fb441-60ed-41ff-a1ac-468c8b7b5989", "")
             {
-                _table_row0Info = new RepoItemInfo(this, "Table_Row0", "?/?/?/cell[@accessiblename='FirstName Row 0']", "", 30000, null, "ac53db35-0545-4e36-bf4e-195ac9179e94");
+                _table_row0Info = new RepoItemInfo(this, "Table_Row0", "?/?/?/cell[@accessiblename='FirstName Row 0' and @text='John']", "", 30000, null, "ac53db35-0545-4e36-bf4e-195ac9179e94");
                 _btn_shuffleInfo = new RepoItemInfo(this, "Btn_Shuffle", "?/?/button[@controlname='btnButton2']", "", 30000, null, "e70be420-8249-476b-94ab-9d0981638b72");
             }
 
