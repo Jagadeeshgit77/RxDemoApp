@@ -5241,7 +5241,7 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 					refimgid="91a761b5-c339-4dac-beec-5002f95f15f0"
 					robustPath=""
 					searchtimeout="30000ms">
-						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/?/cell[@accessiblename='FirstName Row 0' and @text='John']
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/?/cell[2][2]
 					</item>
 					<item
 					addcaps="button,control,nativewindow"

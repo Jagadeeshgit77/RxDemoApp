@@ -41,6 +41,7 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
         /// </summary>
         public GroupBox_Table()
         {
+            CellValue = "";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
         }
 
 #region Variables
+
+        string _CellValue;
+
+        /// <summary>
+        /// Gets or sets the value of variable CellValue.
+        /// </summary>
+        [TestVariable("a6866a6e-7a86-45a7-905c-45e024b4281e")]
+        public string CellValue
+        {
+            get { return _CellValue; }
+            set { _CellValue = value; }
+        }
 
 #endregion
 
@@ -85,6 +98,10 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabUIElements.Table.Btn_Shuffle' at 0;0.", repo.RxMainFrame.RxTabUIElements.Table.Btn_ShuffleInfo, new RecordItemIndex(1));
             repo.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click("0;0");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'RxMainFrame.RxTabUIElements.Table.Table_Row0' and assigning its value to variable 'CellValue'.", repo.RxMainFrame.RxTabUIElements.Table.Table_Row0Info, new RecordItemIndex(2));
+            CellValue = repo.RxMainFrame.RxTabUIElements.Table.Table_Row0.Element.GetAttributeValueText("Text");
             Delay.Milliseconds(0);
             
         }

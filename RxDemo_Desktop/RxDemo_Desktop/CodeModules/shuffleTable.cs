@@ -58,6 +58,7 @@ namespace RxDemo_Desktop.CodeModules
             	rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
             while(!rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
             		Console.WriteLine(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info);
+            		string name = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.ToString();
             	rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
             	Delay.Milliseconds(500);
             	if(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
