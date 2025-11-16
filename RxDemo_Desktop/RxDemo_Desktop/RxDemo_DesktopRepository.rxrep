@@ -5475,5 +5475,9 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		name="Speed">
 			Slow
 		</var>
+		<var
+		id="32701a65-f393-44d8-b605-6f6ec1e19517"
+		name="CellValue">
+		</var>
 	</variables>
 </repository>

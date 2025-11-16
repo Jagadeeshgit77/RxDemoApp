@@ -104,6 +104,12 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="c9691515-0ca2-4663-936e-7e66a2ac1cc5"
+			name="shuffleTable"
+			ref="5d42e7ca-42cf-4ca1-8488-ac8452ab4f98"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="d4d94244-2cc7-4aec-94f3-62e533ff31ad"
 			name="CloseRxDemoApplication"
@@ -192,6 +198,10 @@
 						<testmodule
 						id="d8f1f376-d09c-44c7-9674-164b8de563e7"
 						name="GroupBox_Tree">
+						</testmodule>
+						<testmodule
+						id="c9691515-0ca2-4663-936e-7e66a2ac1cc5"
+						name="shuffleTable">
 						</testmodule>
 					</testcase>
 					<testcase

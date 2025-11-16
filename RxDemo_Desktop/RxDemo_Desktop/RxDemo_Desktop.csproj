@@ -135,17 +135,17 @@
     <Compile Include="CodeModules\TxtVisible.cs">
       <id>f9973c8c-e46b-4379-b6f7-76f1326ec3f6</id>
     </Compile>
-    <Compile Include="DynamicIDs\DynamicIDs.cs">
-      <BoundTo>1330b277-2a5f-41d4-9421-052ab5cf5d1b</BoundTo>
-      <DependentUpon>DynamicIDs.rxrec</DependentUpon>
+    <Compile Include="DynamicIDs\verifyID.cs">
+      <BoundTo>a358c275-62dd-40fc-8e14-d87f4326b12f</BoundTo>
+      <DependentUpon>verifyID.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>1fc0b531-841a-450e-8536-fa6a90d82b17</id>
+      <id>9602161d-b3cb-4891-a619-6e0ae61e0496</id>
     </Compile>
-    <Compile Include="DynamicIDs\DynamicIDs.UserCode.cs">
-      <BoundTo>1330b277-2a5f-41d4-9421-052ab5cf5d1b</BoundTo>
-      <DependentUpon>DynamicIDs.rxrec</DependentUpon>
+    <Compile Include="DynamicIDs\verifyID.UserCode.cs">
+      <BoundTo>a358c275-62dd-40fc-8e14-d87f4326b12f</BoundTo>
+      <DependentUpon>verifyID.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>0b084f73-a30b-4abe-8701-463bd06b5b3a</id>
+      <id>84999667-590a-4087-a9e7-9d866f70c498</id>
     </Compile>
     <Compile Include="ImageBased\ImageBased.cs">
       <BoundTo>3adfb7b6-e816-421a-b7c8-8278fef2ef37</BoundTo>
@@ -313,10 +313,10 @@
     <None Include="app.config">
       <id>2ec40bf6-bd4f-4271-9049-efedd55369d3</id>
     </None>
-    <None Include="DynamicIDs\DynamicIDs.rxrec">
+    <None Include="DynamicIDs\verifyID.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
-      <id>1330b277-2a5f-41d4-9421-052ab5cf5d1b</id>
-      <recordtableid>082f750f-7a3b-49bf-93dc-e787e46107fb</recordtableid>
+      <id>a358c275-62dd-40fc-8e14-d87f4326b12f</id>
+      <recordtableid>549766c2-2fef-4515-a8a5-b16f1737701f</recordtableid>
     </None>
     <None Include="ImageBased\ImageBased.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>

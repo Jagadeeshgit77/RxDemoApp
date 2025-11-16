@@ -111,6 +111,18 @@ namespace RxDemo_Desktop
             set { _Speed = value; }
         }
 
+        string _CellValue = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable CellValue.
+        /// </summary>
+        [TestVariable("32701a65-f393-44d8-b605-6f6ec1e19517")]
+        public string CellValue
+        {
+            get { return _CellValue; }
+            set { _CellValue = value; }
+        }
+
 #endregion
 
         /// <summary>

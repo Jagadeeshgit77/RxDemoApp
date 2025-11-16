@@ -54,16 +54,14 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
 
 #region Variables
 
-        string _CellValue;
-
         /// <summary>
         /// Gets or sets the value of variable CellValue.
         /// </summary>
         [TestVariable("a6866a6e-7a86-45a7-905c-45e024b4281e")]
         public string CellValue
         {
-            get { return _CellValue; }
-            set { _CellValue = value; }
+            get { return repo.CellValue; }
+            set { repo.CellValue = value; }
         }
 
 #endregion
@@ -107,6 +105,14 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
             Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to 'Cindy' on item 'RxMainFrame.RxTabUIElements.Table.Table_Row0'.", repo.RxMainFrame.RxTabUIElements.Table.Table_Row0Info, new RecordItemIndex(3));
             repo.RxMainFrame.RxTabUIElements.Table.Table_Row0.Element.SetAttributeValue("AccessibleValue", "Cindy");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabDynamicIDs.TxtField_CurID' at 121;9.", repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, new RecordItemIndex(4));
+            repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurID.Click("121;9");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='img_vv9u6zje4ciar55o') on item 'RxMainFrame.RxTabDynamicIDs.TxtField_CurID'.", repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.RxMainFrame.RxTabDynamicIDs.TxtField_CurIDInfo, "Text", "img_vv9u6zje4ciar55o");
+            Delay.Milliseconds(100);
             
         }
 

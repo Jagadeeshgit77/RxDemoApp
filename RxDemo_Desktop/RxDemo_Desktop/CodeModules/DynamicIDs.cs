@@ -46,8 +46,19 @@ namespace RxDemo_Desktop.CodeModules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
-//            RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
-//            rx.RxMainFrame.RxTabDynamicIDs.            
+            RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
+            rx.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID.Click();
+            string currId = rx.RxMainFrame.RxTabDynamicIDs.TxtField_CurID.Element.GetAttributeValueText("Text");
+            Report.Info(currId);
+            rx.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID.Click();
+            rx.RxMainFrame.RxTabDynamicIDs.Chk_ShwDynID.Click();
+            string updId = rx.RxMainFrame.RxTabDynamicIDs.TxtField_CurID.Element.GetAttributeValueText("Text"); 
+            //string updId = rx.
+            Report.Info(updId);
+            if(currId!=updId){
+            	Report.Info("ID is updated");
+            }
+            
         }
     }
 }
