@@ -48,32 +48,24 @@ namespace RxDemo_Desktop.CodeModules
             
             
             RxDemo_DesktopRepository rx = new RxDemo_DesktopRepository();
-            
-            //string rowText = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.GetAttributeValueText("Text");
-            
-//            if(!rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
-//            		rx.RxMainFrame.RxButtonExit.Click();
-//            	}
-           
+
+            string cellValue = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0.Element.GetAttributeValueText("AccessibleValue");
+            Report.Info("Curr: "+ cellValue);
+            rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
+            Delay.Milliseconds(500);
+            string newValue = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0.Element.GetAttributeValueText("AccessibleValue");
+            Report.Info("Upd: " + newValue);
+            while(cellValue != newValue){  
+            	Report.Info("Curr: "+ cellValue);
+            	Report.Info("Upd: " + newValue);
             	rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
-            while(!rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
-            		Console.WriteLine(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info);
-            		string name = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.ToString();
-            	rx.RxMainFrame.RxTabUIElements.Table.Btn_Shuffle.Click();
-            	Delay.Milliseconds(500);
-            	if(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
-            		rx.RxMainFrame.RxButtonExit.Click();
+                newValue = rx.RxMainFrame.RxTabUIElements.Table.Table_Row0.Element.GetAttributeValueText("AccessibleValue");
+            	if(cellValue==newValue){
+            		Report.Info("Curr: "+ cellValue);
+            		Report.Info("Upd: " + newValue);
+            		break;
             	}
-            	//Report.Info("Current Row Text: " + rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info);
-            	}
-            	
-            if(rx.RxMainFrame.RxTabUIElements.Table.Table_Row0Info.Equals("John")){
-            		rx.RxMainFrame.RxButtonExit.Click();
-            	}
-            	
-            
-                    
-            
+            }          	                  
         }
     }
 }

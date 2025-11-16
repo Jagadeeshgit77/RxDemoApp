@@ -104,6 +104,10 @@ namespace RxDemo_Desktop.UI_Element_Test_Area
             CellValue = repo.RxMainFrame.RxTabUIElements.Table.Table_Row0.Element.GetAttributeValueText("Text");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to 'Cindy' on item 'RxMainFrame.RxTabUIElements.Table.Table_Row0'.", repo.RxMainFrame.RxTabUIElements.Table.Table_Row0Info, new RecordItemIndex(3));
+            repo.RxMainFrame.RxTabUIElements.Table.Table_Row0.Element.SetAttributeValue("AccessibleValue", "Cindy");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
