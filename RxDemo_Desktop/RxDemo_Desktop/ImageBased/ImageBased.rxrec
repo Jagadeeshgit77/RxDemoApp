@@ -33,7 +33,7 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="3c7b673f-f0fa-4c32-8f21-cdddf8b65392"
+		searchpropertyid="3f5768f4-f639-4f04-8dfe-32d440f5b3bc"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -14739,6 +14739,32 @@ alj6UASUUUUAf//Z
 			<matchvalue>
 			</matchvalue>
 		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1236fc8a-30b8-404f-8bb7-934cbe72da0e"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="75732d99-fb03-4315-8202-c6b472e02764"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabImageBased']/datetime[@controlname='monthCalendar1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="25f8829c-7b6a-4633-bfe7-b9a5a3753635"

@@ -129,6 +129,10 @@ namespace RxDemo_Desktop.ImageBased
             Validate.ContainsImage(repo.RxMainFrame.RxTabImageBased.TheCatInfo, TheCat_Img_Cat, TheCat_Img_Cat_Options);
             Delay.Milliseconds(100);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabImageBased.Calendar' at Center.", repo.RxMainFrame.RxTabImageBased.CalendarInfo, new RecordItemIndex(10));
+            repo.RxMainFrame.RxTabImageBased.Calendar.Click();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
