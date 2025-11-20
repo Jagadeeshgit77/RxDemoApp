@@ -4,7 +4,7 @@
 		<flatlistofchildren>
 			<testmodule
 			id="1de7ba5c-6d55-4527-b333-4641bbe61fe1"
-			name="StartRxDemoApplication"
+			name="Start_Rx_Demo_Application"
 			ref="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
 			type="Recording">
 				<databinding>
@@ -81,7 +81,7 @@
 			</testmodule>
 			<testcase
 			id="b14a9a46-abac-4aab-8769-b1e5b96d3e1d"
-			name="TC02_PositiveScenario">
+			name="TC02_Perform_actions_on_UI_Elements_Tab">
 				<parameters>
 					<param
 					mask="False"
@@ -108,11 +108,13 @@
 			name="shuffleTable"
 			ref="5d42e7ca-42cf-4ca1-8488-ac8452ab4f98"
 			type="UserCode">
+				<description>
+					<![CDATA[Shuffle table until same name is appeared in the first cell of the table]]>
+				</description>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="d4d94244-2cc7-4aec-94f3-62e533ff31ad"
-			name="CloseRxDemoApplication"
+			name="Close_Rx_Demo_Application"
 			ref="3695d157-eb85-48a0-81a4-613d493f6448"
 			type="Recording">
 				<databinding>
@@ -180,13 +182,13 @@
 						name="setup">
 							<testmodule
 							id="1de7ba5c-6d55-4527-b333-4641bbe61fe1"
-							name="StartRxDemoApplication">
+							name="Start_Rx_Demo_Application">
 							</testmodule>
 						</setup>
 					</testcase>
 					<testcase
 					id="b14a9a46-abac-4aab-8769-b1e5b96d3e1d"
-					name="TC02_PositiveScenario">
+					name="TC02_Perform_actions_on_UI_Elements_Tab">
 						<testmodule
 						id="f0de0796-9934-44a1-9ade-64b41e1147c4"
 						name="GroupBox_RadioButton">
@@ -212,7 +214,7 @@
 						name="teardown">
 							<testmodule
 							id="d4d94244-2cc7-4aec-94f3-62e533ff31ad"
-							name="CloseRxDemoApplication">
+							name="Close_Rx_Demo_Application">
 							</testmodule>
 						</teardown>
 					</testcase>

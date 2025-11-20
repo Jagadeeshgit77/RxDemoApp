@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RxDemo_Desktop.Utils
+namespace RxDemo_Desktop.ImageBased
 {
-    public partial class CloseRxDemoApplication
+    public partial class Select_Dates_And_Verify_Cat_Image
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

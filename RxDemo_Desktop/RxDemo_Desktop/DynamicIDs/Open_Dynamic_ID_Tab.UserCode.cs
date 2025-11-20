@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RxDemo_Desktop.Utils
+namespace RxDemo_Desktop.DynamicIDs
 {
-    public partial class StartRxDemoApplication
+    public partial class Open_Dynamic_ID_Tab
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -129,44 +129,44 @@
     <Compile Include="CodeModules\DynamicIDs.cs">
       <id>d18a5a2c-1552-44db-8423-12ac9f7488b4</id>
     </Compile>
-    <Compile Include="CodeModules\shuffleTable.cs">
+    <Compile Include="CodeModules\ShuffleTable.cs">
       <id>6c0718de-06d9-46d8-9444-943de9b1bad1</id>
     </Compile>
     <Compile Include="CodeModules\TxtVisible.cs">
       <id>f9973c8c-e46b-4379-b6f7-76f1326ec3f6</id>
     </Compile>
-    <Compile Include="DynamicIDs\verifyID.cs">
+    <Compile Include="DynamicIDs\Open_Dynamic_ID_Tab.cs">
       <BoundTo>a358c275-62dd-40fc-8e14-d87f4326b12f</BoundTo>
-      <DependentUpon>verifyID.rxrec</DependentUpon>
+      <DependentUpon>Open_Dynamic_ID_Tab.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>9602161d-b3cb-4891-a619-6e0ae61e0496</id>
     </Compile>
-    <Compile Include="DynamicIDs\verifyID.UserCode.cs">
+    <Compile Include="DynamicIDs\Open_Dynamic_ID_Tab.UserCode.cs">
       <BoundTo>a358c275-62dd-40fc-8e14-d87f4326b12f</BoundTo>
-      <DependentUpon>verifyID.rxrec</DependentUpon>
+      <DependentUpon>Open_Dynamic_ID_Tab.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>84999667-590a-4087-a9e7-9d866f70c498</id>
     </Compile>
-    <Compile Include="ImageBased\ImageBased.cs">
+    <Compile Include="ImageBased\Select_Dates_And_Verify_Cat_Image.cs">
       <BoundTo>3adfb7b6-e816-421a-b7c8-8278fef2ef37</BoundTo>
-      <DependentUpon>ImageBased.rxrec</DependentUpon>
+      <DependentUpon>Select_Dates_And_Verify_Cat_Image.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>cb711efd-eb12-4e99-b7f0-bf0fb2c9f042</id>
     </Compile>
-    <Compile Include="ImageBased\ImageBased.UserCode.cs">
+    <Compile Include="ImageBased\Select_Dates_And_Verify_Cat_Image.UserCode.cs">
       <BoundTo>3adfb7b6-e816-421a-b7c8-8278fef2ef37</BoundTo>
-      <DependentUpon>ImageBased.rxrec</DependentUpon>
+      <DependentUpon>Select_Dates_And_Verify_Cat_Image.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>509ba027-0570-48ce-84e0-979d3c5e153d</id>
     </Compile>
-    <Compile Include="Introduction\Introduction.cs">
-      <DependentUpon>Introduction.rxrec</DependentUpon>
+    <Compile Include="Introduction\Verify_Text_Displayed.cs">
+      <DependentUpon>Verify_Text_Displayed.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>d0688e8d-47b9-4a96-b9e5-a734a1be8e0f</id>
       <BoundTo>1c000474-ed73-4f48-80d6-faa9f163e3ab</BoundTo>
     </Compile>
-    <Compile Include="Introduction\Introduction.UserCode.cs">
-      <DependentUpon>Introduction.rxrec</DependentUpon>
+    <Compile Include="Introduction\Verify_Text_Displayed.UserCode.cs">
+      <DependentUpon>Verify_Text_Displayed.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>2a0b14f3-c5f9-414c-94f2-e6fd563243b8</id>
       <BoundTo>1c000474-ed73-4f48-80d6-faa9f163e3ab</BoundTo>
@@ -252,38 +252,38 @@
       <UserCode>true</UserCode>
       <id>61a92b90-13c6-4afd-ad2a-6eee2b78ff49</id>
     </Compile>
-    <Compile Include="UploadTesting\UploadTesting.cs">
+    <Compile Include="UploadTesting\Open_UploadTesting_Tab.cs">
       <BoundTo>8faa386b-65eb-4e5c-9800-e3d9911eed7d</BoundTo>
-      <DependentUpon>UploadTesting.rxrec</DependentUpon>
+      <DependentUpon>Open_UploadTesting_Tab.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>2390ed15-eb97-46bb-87f5-ceaff3bfee09</id>
     </Compile>
-    <Compile Include="UploadTesting\UploadTesting.UserCode.cs">
+    <Compile Include="UploadTesting\Open_UploadTesting_Tab.UserCode.cs">
       <BoundTo>8faa386b-65eb-4e5c-9800-e3d9911eed7d</BoundTo>
-      <DependentUpon>UploadTesting.rxrec</DependentUpon>
+      <DependentUpon>Open_UploadTesting_Tab.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>03627e30-d41b-4fa0-af9f-031a037a3f5c</id>
     </Compile>
-    <Compile Include="Utils\CloseRxDemoApplication.cs">
-      <DependentUpon>CloseRxDemoApplication.rxrec</DependentUpon>
+    <Compile Include="Utils\Close_Rx_Demo_Application.cs">
+      <DependentUpon>Close_Rx_Demo_Application.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ae562076-7db5-4e99-98b9-82eba76382e1</id>
       <BoundTo>99ce717a-b11b-4c8f-b437-54c119351c5b</BoundTo>
     </Compile>
-    <Compile Include="Utils\CloseRxDemoApplication.UserCode.cs">
-      <DependentUpon>CloseRxDemoApplication.rxrec</DependentUpon>
+    <Compile Include="Utils\Close_Rx_Demo_Application.UserCode.cs">
+      <DependentUpon>Close_Rx_Demo_Application.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b5510e10-b1c8-4177-a21a-6f889b55e06e</id>
       <BoundTo>99ce717a-b11b-4c8f-b437-54c119351c5b</BoundTo>
     </Compile>
-    <Compile Include="Utils\StartRxDemoApplication.cs">
-      <DependentUpon>StartRxDemoApplication.rxrec</DependentUpon>
+    <Compile Include="Utils\Start_Rx_Demo_Application.cs">
+      <DependentUpon>Start_Rx_Demo_Application.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>aebf5f69-4447-4d03-a026-603732ac2d52</id>
       <BoundTo>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</BoundTo>
     </Compile>
-    <Compile Include="Utils\StartRxDemoApplication.UserCode.cs">
-      <DependentUpon>StartRxDemoApplication.rxrec</DependentUpon>
+    <Compile Include="Utils\Start_Rx_Demo_Application.UserCode.cs">
+      <DependentUpon>Start_Rx_Demo_Application.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>52e8a1f9-a756-40e1-8a96-68bf4785ccb8</id>
       <BoundTo>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</BoundTo>
@@ -313,17 +313,17 @@
     <None Include="app.config">
       <id>2ec40bf6-bd4f-4271-9049-efedd55369d3</id>
     </None>
-    <None Include="DynamicIDs\verifyID.rxrec">
+    <None Include="DynamicIDs\Open_Dynamic_ID_Tab.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>a358c275-62dd-40fc-8e14-d87f4326b12f</id>
       <recordtableid>549766c2-2fef-4515-a8a5-b16f1737701f</recordtableid>
     </None>
-    <None Include="ImageBased\ImageBased.rxrec">
+    <None Include="ImageBased\Select_Dates_And_Verify_Cat_Image.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>3adfb7b6-e816-421a-b7c8-8278fef2ef37</id>
       <recordtableid>48b2023e-6039-451c-a2a1-aede9de456a2</recordtableid>
     </None>
-    <None Include="Introduction\Introduction.rxrec">
+    <None Include="Introduction\Verify_Text_Displayed.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>1c000474-ed73-4f48-80d6-faa9f163e3ab</id>
       <recordtableid>7af639f8-8b75-40c8-967b-2e8a97290e9c</recordtableid>
@@ -373,17 +373,17 @@
       <id>08d5fac2-1550-461a-a5b1-db545838372f</id>
       <recordtableid>5c60d8bb-9efa-4f85-bbf9-00813aa0fad3</recordtableid>
     </None>
-    <None Include="UploadTesting\UploadTesting.rxrec">
+    <None Include="UploadTesting\Open_UploadTesting_Tab.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>8faa386b-65eb-4e5c-9800-e3d9911eed7d</id>
       <recordtableid>a2df38ee-ad91-42b3-8361-305d6954cb42</recordtableid>
     </None>
-    <None Include="Utils\CloseRxDemoApplication.rxrec">
+    <None Include="Utils\Close_Rx_Demo_Application.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>99ce717a-b11b-4c8f-b437-54c119351c5b</id>
       <recordtableid>3695d157-eb85-48a0-81a4-613d493f6448</recordtableid>
     </None>
-    <None Include="Utils\StartRxDemoApplication.rxrec">
+    <None Include="Utils\Start_Rx_Demo_Application.rxrec">
       <BoundTo>25ec0039-97b1-4e84-921f-6befbc15519b</BoundTo>
       <id>75c7ad76-c17f-4fa9-8e7b-c23db35bd57c</id>
       <recordtableid>42197120-eed0-4ea7-8d4b-2694ca0d65c2</recordtableid>

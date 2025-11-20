@@ -5185,27 +5185,6 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 				name="Tree"
 				searchtimeout="0ms">
 					<item
-					addcaps="tree,accessible"
-					capname="tree"
-					id="ce1fcc2d-0dee-48c4-b171-551bce4e43ac"
-					name="TreeView"
-					refimgid="34e9773d-0ab4-40ac-b988-ebf20a06d935"
-					refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabUIElements']/tree/tree[@accessiblename='Tree view']"
-					robustPath="/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']"
-					searchtimeout="30000ms">
-						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/?/tree[@accessiblename='Tree view']
-					</item>
-					<item
-					addcaps="treeitem,accessible,accessibletreeitem"
-					capname="treeitem"
-					id="bf217170-912a-447a-8939-9916f0db7604"
-					name="RanorexAutomationHelpers"
-					refimgid="d3d81c32-1444-432b-8e37-88d9799575ec"
-					robustPath=""
-					searchtimeout="30000ms">
-						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?//treeitem[@accessiblename&gt;'Ranorex Automation Helper']
-					</item>
-					<item
 					addcaps="treeitem,accessible,accessibletreeitem"
 					capname="treeitem"
 					id="5e744527-7063-49d8-b8a2-3df9ef37afcf"
@@ -5347,17 +5326,6 @@ pTul1ZIxWD6hnxSwHKpLk0i9PpgwagzmGM/CT7MWYfFUEwLuaEwaSLAZOgAzhutj5oj+mDWiL2aN
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='tabPage1']
 				</basepath>
 			</folder>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="367937f8-620e-4efc-82ed-488b0ca791d4"
-			name="RxButtonExit"
-			refimgid="26b34665-4356-4bc1-948c-9e7f622d9c77"
-			refpath="/form[@controlname='RxMainFrame']/button[@controlname='RxButtonExit']"
-			robustPath="/form[@controlname='RxMainFrame']/button[@controlname='RxButtonExit']"
-			searchtimeout="30000ms">
-				/form[@controlname='RxMainFrame']/button[@controlname='RxButtonExit']
-			</item>
 			<basepath>
 				/form[@controlname='RxMainFrame']
 			</basepath>

@@ -11,6 +11,9 @@
 			name="DynamicIDs"
 			ref="76451e2c-d3e0-4eac-8317-1b0f10a13fe6"
 			type="UserCode">
+				<description>
+					<![CDATA[Verify if IDs are changed]]>
+				</description>
 			</testmodule>
 			<setup
 			id="3d51be2d-9509-4c3e-988b-fa65740be0e6"
@@ -34,7 +37,7 @@
 			</testcase>
 			<testmodule
 			id="42b7f1d0-7d97-4c91-8099-78c8857792a8"
-			name="verifyID"
+			name="Open_Dynamic_ID_Tab"
 			ref="549766c2-2fef-4515-a8a5-b16f1737701f"
 			type="Recording">
 				<databinding>
@@ -85,7 +88,7 @@
 			</testsuite>
 			<testmodule
 			id="94cf113f-acb1-496a-95e3-58dba29e9c6b"
-			name="StartRxDemoApplication"
+			name="Start_Rx_Demo_Application"
 			ref="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
 			type="Recording">
 				<databinding>
@@ -111,7 +114,7 @@
 			</testcase>
 			<testcase
 			id="b5bef3e9-8a1e-45ee-bfc1-19ee30953c60"
-			name="TC02">
+			name="TC02_Verify_ID_is_changed_when_Image_is_displayed">
 				<parameters>
 					<param
 					mask="False"
@@ -126,7 +129,7 @@
 			</teardown>
 			<testmodule
 			id="fc5ce5b2-4592-4000-9424-007609e1f1cf"
-			name="CloseRxDemoApplication"
+			name="Close_Rx_Demo_Application"
 			ref="3695d157-eb85-48a0-81a4-613d493f6448"
 			type="Recording">
 				<databinding>
@@ -154,16 +157,16 @@
 						name="setup">
 							<testmodule
 							id="94cf113f-acb1-496a-95e3-58dba29e9c6b"
-							name="StartRxDemoApplication">
+							name="Start_Rx_Demo_Application">
 							</testmodule>
 						</setup>
 					</testcase>
 					<testcase
 					id="b5bef3e9-8a1e-45ee-bfc1-19ee30953c60"
-					name="TC02">
+					name="TC02_Verify_ID_is_changed_when_Image_is_displayed">
 						<testmodule
 						id="42b7f1d0-7d97-4c91-8099-78c8857792a8"
-						name="verifyID">
+						name="Open_Dynamic_ID_Tab">
 						</testmodule>
 						<testmodule
 						id="21fdb479-4922-4b76-941c-5df0a0cb9c85"
@@ -178,7 +181,7 @@
 						name="teardown">
 							<testmodule
 							id="fc5ce5b2-4592-4000-9424-007609e1f1cf"
-							name="CloseRxDemoApplication">
+							name="Close_Rx_Demo_Application">
 							</testmodule>
 						</teardown>
 					</testcase>

@@ -175,7 +175,6 @@ namespace RxDemo_Desktop
             RxDemo_DesktopRepositoryFolders.RxTabUploadFolder _rxtabupload;
             RxDemo_DesktopRepositoryFolders.RxTabDynamicIDsFolder _rxtabdynamicids;
             RepoItemInfo _menutabInfo;
-            RepoItemInfo _rxbuttonexitInfo;
 
             /// <summary>
             /// Creates a new RxMainFrame  folder.
@@ -190,7 +189,6 @@ namespace RxDemo_Desktop
                 _rxtabupload = new RxDemo_DesktopRepositoryFolders.RxTabUploadFolder(this);
                 _rxtabdynamicids = new RxDemo_DesktopRepositoryFolders.RxTabDynamicIDsFolder(this);
                 _menutabInfo = new RepoItemInfo(this, "MenuTab", "?/?/tabpage[@accessiblename=$Tab]", "", 30000, null, "5d3f4ca0-21f9-482d-9989-a20d497cad5c");
-                _rxbuttonexitInfo = new RepoItemInfo(this, "RxButtonExit", "button[@controlname='RxButtonExit']", "button[@controlname='RxButtonExit']", 30000, null, "367937f8-620e-4efc-82ed-488b0ca791d4");
             }
 
             /// <summary>
@@ -238,30 +236,6 @@ namespace RxDemo_Desktop
                 get
                 {
                     return _menutabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RxButtonExit item.
-            /// </summary>
-            [RepositoryItem("367937f8-620e-4efc-82ed-488b0ca791d4")]
-            public virtual Ranorex.Button RxButtonExit
-            {
-                get
-                {
-                    return _rxbuttonexitInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RxButtonExit item info.
-            /// </summary>
-            [RepositoryItemInfo("367937f8-620e-4efc-82ed-488b0ca791d4")]
-            public virtual RepoItemInfo RxButtonExitInfo
-            {
-                get
-                {
-                    return _rxbuttonexitInfo;
                 }
             }
 
@@ -1187,8 +1161,6 @@ namespace RxDemo_Desktop
         [RepositoryFolder("482ca607-e29d-41cc-a0c3-05fce2a8eaae")]
         public partial class TreeFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _treeviewInfo;
-            RepoItemInfo _ranorexautomationhelpersInfo;
             RepoItemInfo _ranorexstudiofundamentalsInfo;
             RepoItemInfo _actionsInfo;
 
@@ -1198,8 +1170,6 @@ namespace RxDemo_Desktop
             public TreeFolder(RepoGenBaseFolder parentFolder) :
                     base("Tree", "", parentFolder, 0, null, false, "482ca607-e29d-41cc-a0c3-05fce2a8eaae", "")
             {
-                _treeviewInfo = new RepoItemInfo(this, "TreeView", "?/?/tree[@accessiblename='Tree view']", "", 30000, null, "ce1fcc2d-0dee-48c4-b171-551bce4e43ac");
-                _ranorexautomationhelpersInfo = new RepoItemInfo(this, "RanorexAutomationHelpers", "?//treeitem[@accessiblename>'Ranorex Automation Helper']", "", 30000, null, "bf217170-912a-447a-8939-9916f0db7604");
                 _ranorexstudiofundamentalsInfo = new RepoItemInfo(this, "RanorexStudioFundamentals", "?/?/?/treeitem[@accessiblename>'Ranorex Studio fundamentals']", "", 30000, null, "5e744527-7063-49d8-b8a2-3df9ef37afcf");
                 _actionsInfo = new RepoItemInfo(this, "Actions", "tree[@controlname='treTestTreeView']//treeitem[@accessiblename='Actions']", "", 30000, null, "3e7fd442-9884-4a81-839e-8224bb05e722");
             }
@@ -1213,54 +1183,6 @@ namespace RxDemo_Desktop
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TreeView item.
-            /// </summary>
-            [RepositoryItem("ce1fcc2d-0dee-48c4-b171-551bce4e43ac")]
-            public virtual Ranorex.Tree TreeView
-            {
-                get
-                {
-                    return _treeviewInfo.CreateAdapter<Ranorex.Tree>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TreeView item info.
-            /// </summary>
-            [RepositoryItemInfo("ce1fcc2d-0dee-48c4-b171-551bce4e43ac")]
-            public virtual RepoItemInfo TreeViewInfo
-            {
-                get
-                {
-                    return _treeviewInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RanorexAutomationHelpers item.
-            /// </summary>
-            [RepositoryItem("bf217170-912a-447a-8939-9916f0db7604")]
-            public virtual Ranorex.TreeItem RanorexAutomationHelpers
-            {
-                get
-                {
-                    return _ranorexautomationhelpersInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RanorexAutomationHelpers item info.
-            /// </summary>
-            [RepositoryItemInfo("bf217170-912a-447a-8939-9916f0db7604")]
-            public virtual RepoItemInfo RanorexAutomationHelpersInfo
-            {
-                get
-                {
-                    return _ranorexautomationhelpersInfo;
                 }
             }
 

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="549766c2-2fef-4515-a8a5-b16f1737701f"
-mode="Global">
+id="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
+mode="Desktop">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,38 +19,34 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="verifyID"
-	namespace="RxDemo_Desktop.DynamicIDs">
+	classname="Start_Rx_Demo_Application"
+	namespace="RxDemo_Desktop.Utils">
 	</codegen>
 	<variables>
+		<var
+		id="6723f1ca-6174-4772-b08b-0dd6c8d83526"
+		name="StartAutProcessIDVar">
+		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<runapprecorditem
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="4e38c205-d548-4719-b28f-f81e1e99fa82"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		maximized="False"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
 			</bindings>
-			<info
-			id="5d3f4ca0-21f9-482d-9989-a20d497cad5c"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename=$Tab]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
+			<filename>
+				C:\Users\Planit\Downloads\RxDemoApp\RxDemoApp.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
 	</recorditems>
 	<repository
 	id="25f8829c-7b6a-4633-bfe7-b9a5a3753635"
@@ -67,7 +63,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		verifyID.UserCode.cs
+		StartRxDemoApplication.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

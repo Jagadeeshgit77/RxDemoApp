@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="3695d157-eb85-48a0-81a4-613d493f6448"
-mode="Desktop">
+id="549766c2-2fef-4515-a8a5-b16f1737701f"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,32 +19,38 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CloseRxDemoApplication"
-	namespace="RxDemo_Desktop.Utils">
+	classname="Open_Dynamic_ID_Tab"
+	namespace="RxDemo_Desktop.DynamicIDs">
 	</codegen>
 	<variables>
-		<var
-		id="0004bda3-717e-4cbb-a78f-6c7e9eee4285"
-		name="CloseAutProcessIDVar">
-			-1
-		</var>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
-		graceperiod="500ms"
-		method="CloseWindowByProcessID"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="787bf7ad-9b12-41b7-9373-72f0c0577114">
+		searchpropertyid="4e38c205-d548-4719-b28f-f81e1e99fa82"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ProcessID"
-				variable="CloseAutProcessIDVar">
-				</binding>
 			</bindings>
-		</closeapprecorditem>
+			<info
+			id="5d3f4ca0-21f9-482d-9989-a20d497cad5c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename=$Tab]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="25f8829c-7b6a-4633-bfe7-b9a5a3753635"
@@ -61,7 +67,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CloseRxDemoApplication.UserCode.cs
+		Verify_ID.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

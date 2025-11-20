@@ -69,7 +69,7 @@
 			</testcase>
 			<testcase
 			id="5bb97a04-6414-4f76-9950-37411df7bb2b"
-			name="TC02_PositiveScenario">
+			name="TC02_Open_Introduction_Tab_and_Verify_Welcome_Text_is_displayed">
 				<parameters>
 					<param
 					mask="False"
@@ -83,33 +83,17 @@
 					</param>
 				</parameters>
 			</testcase>
-			<testcase
-			id="6185870f-3e25-4231-8bb3-d9e66d31b7bc"
-			name="TC03_NegativeScenario">
-				<parameters>
-					<param
-					mask="False"
-					name="Tab"
-					value="Introduction">
-					</param>
-					<param
-					mask="False"
-					name="Name"
-					value="John">
-					</param>
-				</parameters>
-			</testcase>
 			<teardown
 			id="adca9231-3057-4ec1-a770-2e011792bfe8"
 			name="teardown">
 			</teardown>
 			<testcase
 			id="c8b65f15-c656-4fcf-b666-c78b4bff53c6"
-			name="TC04_CloseApplication">
+			name="TC03_CloseApplication">
 			</testcase>
 			<testmodule
 			id="cc172725-bcb5-46d0-ba5c-37f724624810"
-			name="CloseRxDemoApplication"
+			name="Close_Rx_Demo_Application"
 			ref="3695d157-eb85-48a0-81a4-613d493f6448"
 			type="Recording">
 				<databinding>
@@ -127,7 +111,7 @@
 			</setup>
 			<testmodule
 			id="e467c5e1-40b2-4752-a22a-d1bc2feb0946"
-			name="Introduction"
+			name="Verify_Text_Displayed"
 			ref="7af639f8-8b75-40c8-967b-2e8a97290e9c"
 			type="Recording">
 				<databinding>
@@ -161,7 +145,7 @@
 			</testmodule>
 			<testmodule
 			id="efbacbc6-2ef0-4cfa-96b4-eb146ee93891"
-			name="StartRxDemoApplication"
+			name="Start_Rx_Demo_Application"
 			ref="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
 			type="Recording">
 				<databinding>
@@ -170,26 +154,6 @@
 					datasourceid="5af99940-622a-4f8f-9620-a29a3f03b8a3"
 					variableid="6723f1ca-6174-4772-b08b-0dd6c8d83526"
 					variablename="StartAutProcessIDVar">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="fbb07f79-df8d-41c8-978f-410b8e33a67f"
-			name="Introduction"
-			ref="7af639f8-8b75-40c8-967b-2e8a97290e9c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tab"
-					datasourceid="6185870f-3e25-4231-8bb3-d9e66d31b7bc"
-					variableid="43a54ce5-75bb-4d2e-88b3-ac36f004a6a3"
-					variablename="Tab">
-					</var>
-					<var
-					dataname="Name"
-					datasourceid="6185870f-3e25-4231-8bb3-d9e66d31b7bc"
-					variableid="d1b932cc-272d-4ab4-a104-1a134e49b111"
-					variablename="Name">
 					</var>
 				</databinding>
 			</testmodule>
@@ -209,35 +173,27 @@
 						name="setup">
 							<testmodule
 							id="efbacbc6-2ef0-4cfa-96b4-eb146ee93891"
-							name="StartRxDemoApplication">
+							name="Start_Rx_Demo_Application">
 							</testmodule>
 						</setup>
 					</testcase>
 					<testcase
 					id="5bb97a04-6414-4f76-9950-37411df7bb2b"
-					name="TC02_PositiveScenario">
+					name="TC02_Open_Introduction_Tab_and_Verify_Welcome_Text_is_displayed">
 						<testmodule
 						id="e467c5e1-40b2-4752-a22a-d1bc2feb0946"
-						name="Introduction">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="6185870f-3e25-4231-8bb3-d9e66d31b7bc"
-					name="TC03_NegativeScenario">
-						<testmodule
-						id="fbb07f79-df8d-41c8-978f-410b8e33a67f"
-						name="Introduction">
+						name="Verify_Text_Displayed">
 						</testmodule>
 					</testcase>
 					<testcase
 					id="c8b65f15-c656-4fcf-b666-c78b4bff53c6"
-					name="TC04_CloseApplication">
+					name="TC03_CloseApplication">
 						<teardown
 						id="adca9231-3057-4ec1-a770-2e011792bfe8"
 						name="teardown">
 							<testmodule
 							id="cc172725-bcb5-46d0-ba5c-37f724624810"
-							name="CloseRxDemoApplication">
+							name="Close_Rx_Demo_Application">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -259,9 +215,6 @@
 			</testcontainer>
 			<testcontainer
 			id="5bb97a04-6414-4f76-9950-37411df7bb2b">
-			</testcontainer>
-			<testcontainer
-			id="6185870f-3e25-4231-8bb3-d9e66d31b7bc">
 			</testcontainer>
 			<testcontainer
 			id="c8b65f15-c656-4fcf-b666-c78b4bff53c6">

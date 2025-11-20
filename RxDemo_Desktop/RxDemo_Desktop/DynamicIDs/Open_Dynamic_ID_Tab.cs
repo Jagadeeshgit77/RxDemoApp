@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RxDemo_Desktop.UploadTesting
+namespace RxDemo_Desktop.DynamicIDs
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The UploadTesting recording.
+    ///The Open_Dynamic_ID_Tab recording.
     /// </summary>
-    [TestModule("a2df38ee-ad91-42b3-8361-305d6954cb42", ModuleType.Recording, 1)]
-    public partial class UploadTesting : ITestModule
+    [TestModule("549766c2-2fef-4515-a8a5-b16f1737701f", ModuleType.Recording, 1)]
+    public partial class Open_Dynamic_ID_Tab : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RxDemo_Desktop.RxDemo_DesktopRepository repository.
         /// </summary>
         public static global::RxDemo_Desktop.RxDemo_DesktopRepository repo = global::RxDemo_Desktop.RxDemo_DesktopRepository.Instance;
 
-        static UploadTesting instance = new UploadTesting();
+        static Open_Dynamic_ID_Tab instance = new Open_Dynamic_ID_Tab();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public UploadTesting()
+        public Open_Dynamic_ID_Tab()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static UploadTesting Instance
+        public static Open_Dynamic_ID_Tab Instance
         {
             get { return instance; }
         }

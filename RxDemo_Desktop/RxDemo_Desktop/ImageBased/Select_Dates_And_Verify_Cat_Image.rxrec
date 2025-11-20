@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ImageBased"
+	classname="Select_Dates_And_Verify_Cat_Image"
 	namespace="RxDemo_Desktop.ImageBased">
 	</codegen>
 	<variables>

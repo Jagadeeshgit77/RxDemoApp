@@ -5,7 +5,7 @@
 			<testcase
 			datasource="TestDataBase"
 			id="0f3a4ce2-d169-4904-bc73-68645f2d69fe"
-			name="TC02_PositiveScenario">
+			name="TC02_Enter_employee_data_and_Verify_number_of_entries">
 				<parameters>
 					<param
 					mask="False"
@@ -21,7 +21,7 @@
 			</testcase>
 			<testmodule
 			id="1dab7157-2624-4fe6-9864-07f4fcd91000"
-			name="StartRxDemoApplication"
+			name="Start_Rx_Demo_Application"
 			ref="42197120-eed0-4ea7-8d4b-2694ca0d65c2"
 			type="Recording">
 				<databinding>
@@ -35,7 +35,7 @@
 			</testmodule>
 			<testcase
 			id="55c7a11c-d5d0-4891-a689-cf51f1850d64"
-			name="TC04_CloseApplication">
+			name="TC03_CloseApplication">
 			</testcase>
 			<teardown
 			id="5b48300d-c49f-48e4-be6f-f4c6e52eb9b2"
@@ -57,22 +57,6 @@
 			id="ba09cda0-76ff-4798-9e4d-4c8c0f2c79c1"
 			name="setup">
 			</setup>
-			<testcase
-			id="c00bc56f-fb6d-4040-9ee8-091fc76ab9c0"
-			name="TC03_NegativeScenario">
-				<parameters>
-					<param
-					mask="False"
-					name="Tab"
-					value="Introduction">
-					</param>
-					<param
-					mask="False"
-					name="Name"
-					value="John">
-					</param>
-				</parameters>
-			</testcase>
 			<testmodule
 			id="c1345443-a8cb-4391-ba7c-8ac91f83ffab"
 			name="Add_TestData"
@@ -160,21 +144,6 @@
 			showtestmodulefullpath="False"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
-			<testmodule
-			enabled="False"
-			id="e6669843-67d4-464e-8f93-90be14bc5452"
-			name="Add_TestData"
-			ref="dfac102d-79a9-4aa0-ba82-2d24f56f190a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tab"
-					datasourceid="c00bc56f-fb6d-4040-9ee8-091fc76ab9c0"
-					variableid="43a54ce5-75bb-4d2e-88b3-ac36f004a6a3"
-					variablename="Tab">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="f15d517f-3f66-493d-8f72-bbef8011d238"
 			name="TC01_OpenApplication">
@@ -192,9 +161,8 @@
 				</parameters>
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="feee4ac3-6963-444f-9aff-4ad69fff2789"
-			name="CloseRxDemoApplication"
+			name="Close_Rx_Demo_Application"
 			ref="3695d157-eb85-48a0-81a4-613d493f6448"
 			type="Recording">
 				<databinding>
@@ -222,35 +190,27 @@
 						name="setup">
 							<testmodule
 							id="1dab7157-2624-4fe6-9864-07f4fcd91000"
-							name="StartRxDemoApplication">
+							name="Start_Rx_Demo_Application">
 							</testmodule>
 						</setup>
 					</testcase>
 					<testcase
 					id="0f3a4ce2-d169-4904-bc73-68645f2d69fe"
-					name="TC02_PositiveScenario">
+					name="TC02_Enter_employee_data_and_Verify_number_of_entries">
 						<testmodule
 						id="c1345443-a8cb-4391-ba7c-8ac91f83ffab"
 						name="Add_TestData">
 						</testmodule>
 					</testcase>
 					<testcase
-					id="c00bc56f-fb6d-4040-9ee8-091fc76ab9c0"
-					name="TC03_NegativeScenario">
-						<testmodule
-						id="e6669843-67d4-464e-8f93-90be14bc5452"
-						name="Add_TestData">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="55c7a11c-d5d0-4891-a689-cf51f1850d64"
-					name="TC04_CloseApplication">
+					name="TC03_CloseApplication">
 						<teardown
 						id="5b48300d-c49f-48e4-be6f-f4c6e52eb9b2"
 						name="teardown">
 							<testmodule
 							id="feee4ac3-6963-444f-9aff-4ad69fff2789"
-							name="CloseRxDemoApplication">
+							name="Close_Rx_Demo_Application">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -336,9 +296,6 @@
 			</testcontainer>
 			<testcontainer
 			id="96e96724-409a-4636-bd5b-895495bbbf6b">
-			</testcontainer>
-			<testcontainer
-			id="c00bc56f-fb6d-4040-9ee8-091fc76ab9c0">
 			</testcontainer>
 			<testcontainer
 			id="f15d517f-3f66-493d-8f72-bbef8011d238">

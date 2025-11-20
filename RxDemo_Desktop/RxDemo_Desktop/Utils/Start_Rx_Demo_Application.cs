@@ -24,46 +24,46 @@ namespace RxDemo_Desktop.Utils
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseRxDemoApplication recording.
+    ///The Start_Rx_Demo_Application recording.
     /// </summary>
-    [TestModule("3695d157-eb85-48a0-81a4-613d493f6448", ModuleType.Recording, 1)]
-    public partial class CloseRxDemoApplication : ITestModule
+    [TestModule("42197120-eed0-4ea7-8d4b-2694ca0d65c2", ModuleType.Recording, 1)]
+    public partial class Start_Rx_Demo_Application : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RxDemo_Desktop.RxDemo_DesktopRepository repository.
         /// </summary>
         public static global::RxDemo_Desktop.RxDemo_DesktopRepository repo = global::RxDemo_Desktop.RxDemo_DesktopRepository.Instance;
 
-        static CloseRxDemoApplication instance = new CloseRxDemoApplication();
+        static Start_Rx_Demo_Application instance = new Start_Rx_Demo_Application();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseRxDemoApplication()
+        public Start_Rx_Demo_Application()
         {
-            CloseAutProcessIDVar = "-1";
+            StartAutProcessIDVar = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseRxDemoApplication Instance
+        public static Start_Rx_Demo_Application Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _CloseAutProcessIDVar;
+        string _StartAutProcessIDVar;
 
         /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
+        /// Gets or sets the value of variable StartAutProcessIDVar.
         /// </summary>
-        [TestVariable("0004bda3-717e-4cbb-a78f-6c7e9eee4285")]
-        public string CloseAutProcessIDVar
+        [TestVariable("6723f1ca-6174-4772-b08b-0dd6c8d83526")]
+        public string StartAutProcessIDVar
         {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
+            get { return _StartAutProcessIDVar; }
+            set { _StartAutProcessIDVar = value; }
         }
 
 #endregion
@@ -92,8 +92,8 @@ namespace RxDemo_Desktop.Utils
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application with Process ID bound to variable $CloseAutProcessIDVar.", new RecordItemIndex(0));
-            Host.Current.CloseApplication(int.Parse(CloseAutProcessIDVar), 500);
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Users\\Planit\\Downloads\\RxDemoApp\\RxDemoApp.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
+            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Users\\Planit\\Downloads\\RxDemoApp\\RxDemoApp.exe", "", "", false));
             Delay.Milliseconds(0);
             
         }

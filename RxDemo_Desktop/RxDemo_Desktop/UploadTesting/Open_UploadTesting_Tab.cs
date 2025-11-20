@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RxDemo_Desktop.Introduction
+namespace RxDemo_Desktop.UploadTesting
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Introduction recording.
+    ///The Open_UploadTesting_Tab recording.
     /// </summary>
-    [TestModule("7af639f8-8b75-40c8-967b-2e8a97290e9c", ModuleType.Recording, 1)]
-    public partial class Introduction : ITestModule
+    [TestModule("a2df38ee-ad91-42b3-8361-305d6954cb42", ModuleType.Recording, 1)]
+    public partial class Open_UploadTesting_Tab : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RxDemo_Desktop.RxDemo_DesktopRepository repository.
         /// </summary>
         public static global::RxDemo_Desktop.RxDemo_DesktopRepository repo = global::RxDemo_Desktop.RxDemo_DesktopRepository.Instance;
 
-        static Introduction instance = new Introduction();
+        static Open_UploadTesting_Tab instance = new Open_UploadTesting_Tab();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Introduction()
+        public Open_UploadTesting_Tab()
         {
-            Name = "Jagadeesh";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Introduction Instance
+        public static Open_UploadTesting_Tab Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Name;
-
-        /// <summary>
-        /// Gets or sets the value of variable Name.
-        /// </summary>
-        [TestVariable("d1b932cc-272d-4ab4-a104-1a134e49b111")]
-        public string Name
-        {
-            get { return _Name; }
-            set { _Name = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Tab.
@@ -104,26 +91,6 @@ namespace RxDemo_Desktop.Introduction
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.MenuTab' at Center.", repo.RxMainFrame.MenuTabInfo, new RecordItemIndex(0));
             repo.RxMainFrame.MenuTab.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabIntroduction.TxtField_Name' at 49;10.", repo.RxMainFrame.RxTabIntroduction.TxtField_NameInfo, new RecordItemIndex(1));
-            repo.RxMainFrame.RxTabIntroduction.TxtField_Name.Click("49;10");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Name' with focus on 'RxMainFrame.RxTabIntroduction.TxtField_Name'.", repo.RxMainFrame.RxTabIntroduction.TxtField_NameInfo, new RecordItemIndex(2));
-            repo.RxMainFrame.RxTabIntroduction.TxtField_Name.PressKeys(Name);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabIntroduction.Btn_UserName' at 22;15.", repo.RxMainFrame.RxTabIntroduction.Btn_UserNameInfo, new RecordItemIndex(3));
-            repo.RxMainFrame.RxTabIntroduction.Btn_UserName.Click("22;15");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Welcome, Jagadeesh!') on item 'RxMainFrame.RxTabIntroduction.Txt_WelcomeMessage'.", repo.RxMainFrame.RxTabIntroduction.Txt_WelcomeMessageInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.RxMainFrame.RxTabIntroduction.Txt_WelcomeMessageInfo, "Text", "Welcome, Jagadeesh!");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabIntroduction.LinkTxt_Reset' at Center.", repo.RxMainFrame.RxTabIntroduction.LinkTxt_ResetInfo, new RecordItemIndex(5));
-            repo.RxMainFrame.RxTabIntroduction.LinkTxt_Reset.Click();
             Delay.Milliseconds(0);
             
         }

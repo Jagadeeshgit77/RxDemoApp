@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace RxDemo_Desktop.UploadTesting
 {
-    public partial class UploadTesting
+    public partial class Open_UploadTesting_Tab
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -24,29 +24,29 @@ namespace RxDemo_Desktop.ImageBased
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ImageBased recording.
+    ///The Select_Dates_And_Verify_Cat_Image recording.
     /// </summary>
     [TestModule("48b2023e-6039-451c-a2a1-aede9de456a2", ModuleType.Recording, 1)]
-    public partial class ImageBased : ITestModule
+    public partial class Select_Dates_And_Verify_Cat_Image : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RxDemo_Desktop.RxDemo_DesktopRepository repository.
         /// </summary>
         public static global::RxDemo_Desktop.RxDemo_DesktopRepository repo = global::RxDemo_Desktop.RxDemo_DesktopRepository.Instance;
 
-        static ImageBased instance = new ImageBased();
+        static Select_Dates_And_Verify_Cat_Image instance = new Select_Dates_And_Verify_Cat_Image();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ImageBased()
+        public Select_Dates_And_Verify_Cat_Image()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ImageBased Instance
+        public static Select_Dates_And_Verify_Cat_Image Instance
         {
             get { return instance; }
         }

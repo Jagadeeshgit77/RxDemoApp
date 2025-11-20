@@ -4,7 +4,7 @@
 		<flatlistofchildren>
 			<testmodule
 			id="0f6deb4f-432f-42e7-a898-f0b351cd3676"
-			name="ImageBased"
+			name="Select_Dates_And_Verify_Cat_Image"
 			ref="48b2023e-6039-451c-a2a1-aede9de456a2"
 			type="Recording">
 				<databinding>
@@ -77,7 +77,7 @@
 			</testcase>
 			<testcase
 			id="4cc2356c-c745-4c7e-a546-cf5fbdd53f14"
-			name="TC02_PositiveScenario">
+			name="TC02_Click_on_dates_from_the_calendar_and_Verify_Cat_Image_is_displayed">
 				<parameters>
 					<param
 					mask="False"
@@ -159,10 +159,10 @@
 					</testcase>
 					<testcase
 					id="4cc2356c-c745-4c7e-a546-cf5fbdd53f14"
-					name="TC02_PositiveScenario">
+					name="TC02_Click_on_dates_from_the_calendar_and_Verify_Cat_Image_is_displayed">
 						<testmodule
 						id="0f6deb4f-432f-42e7-a898-f0b351cd3676"
-						name="ImageBased">
+						name="Select_Dates_And_Verify_Cat_Image">
 						</testmodule>
 					</testcase>
 					<testcase

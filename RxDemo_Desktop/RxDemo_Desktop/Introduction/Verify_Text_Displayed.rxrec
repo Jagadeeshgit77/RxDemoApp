@@ -19,7 +19,7 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Introduction"
+	classname="Verify_Text_Displayed"
 	namespace="RxDemo_Desktop.Introduction">
 	</codegen>
 	<variables>
@@ -2657,7 +2657,7 @@ FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Introduction.UserCode.cs
+		Open_Introduction_Tab_And_.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RxDemo_Desktop.ImageBased
+namespace RxDemo_Desktop.Introduction
 {
-    public partial class ImageBased
+    public partial class Verify_Text_Displayed
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

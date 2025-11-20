@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="UploadTesting"
+	classname="Open_UploadTesting_Tab"
 	namespace="RxDemo_Desktop.UploadTesting">
 	</codegen>
 	<variables>
